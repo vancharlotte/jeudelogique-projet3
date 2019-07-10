@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="jeudelogique:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jeudelogique_jar</output-path>
+    <root id="archive" name="jeudelogique.jar">
+      <element id="module-output" name="jeudelogique" />
+      <element id="library" level="project" name="lib" />
+      <element id="directory" name="lib" />
+    </root>
+  </artifact>
+</component>
