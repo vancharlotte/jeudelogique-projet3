@@ -53,9 +53,11 @@ public class Computer extends Player {
      * méthode qui permet à l'ordinauteur de sélectionner une proposition  pour le jeu plus ou moins
      * @param hint dernier indice donné à l'ordinateur
      * @param nbTrials nombres d'essais utilisés
+     *
      */
     public void selectProposalPOM(List<Object> hint, int nbTrials) {
         if (nbTrials == 0) {
+            codeList.clear();
             codeList = createCodeList();
             proposal.clear();
             chooseCode();

@@ -63,6 +63,7 @@ public class Duel extends ModeDeJeu {
     public void replay(List proposalList, List present) {
         gameEnd=false;
         nbTrial=0;
+        proposalList.clear();
         super.replay(proposalList, present);
     }
 
