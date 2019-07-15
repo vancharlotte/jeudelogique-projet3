@@ -48,6 +48,7 @@ public class User extends Player {
 
     }
 
+
     /**choix proposition par utilisateur / mode challengeur, mode duel
      * @throws NumberFormatException*/
     public void  selectProposal(){

@@ -1,4 +1,6 @@
 Manifest-Version: 1.0
-Class-Path: log4j-api-2.11.2.jar log4j-core-2.11.2.jar
+Class-Path: log4j-api-2.11.2.jar log4j-core-2.11.2.jar log4j-api-2.11.
+ 2.jar log4j-core-2.11.2.jar log4j-core-2.11.2.jar log4j-api-2.11.2.ja
+ r
 Main-Class: main.Main
-
+Multi-Release: true

@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7ea86dd-fc4d-458f-881c-a586c867aaf1" name="Default Changelist" comment="">
+    <list default="true" id="a7ea86dd-fc4d-458f-881c-a586c867aaf1" name="Default Changelist" comment="update mode challengeur">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/jeudelogique_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
@@ -17,44 +17,55 @@
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/jeudelogique.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/log4j-api-2.11.2.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/log4j-core-2.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/jeudelogique_jar/jeudelogique.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Config.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Mastermind.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/PlusOuMoins.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Computer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Challengeur.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Defenseur.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Duel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/ModeDeJeu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/Config.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/Menu.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/jeux/Game.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/jeux/Mastermind.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/jeux/PlusOuMoins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/joueur/Computer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/joueur/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/joueur/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/modedejeu/Defenseur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/modedejeu/Duel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/config.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet3/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeudelogique_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeudelogique_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/joueur/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/joueur/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/modedejeu/Duel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/Duel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeudelogique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeudelogique.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jeudelogique_jar/jeudelogique.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/PlusOuMoins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Challengeur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Defenseur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Duel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/ModeDeJeu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/joueur/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/joueur/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,73 +77,20 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="173">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Duel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1010">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Random.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="125" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1439">
-              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -145,19 +103,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Config.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/joueur/User.java" />
         <option value="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" />
         <option value="$PROJECT_DIR$/src/main/modedejeu/Duel.java" />
         <option value="$PROJECT_DIR$/src/main/joueur/Computer.java" />
+        <option value="$PROJECT_DIR$/src/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/joueur/User.java" />
+        <option value="$PROJECT_DIR$/src/main/Config.java" />
+        <option value="$PROJECT_DIR$/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="41" />
-    <option name="y" value="4" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -167,12 +127,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeudelogique" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeudelogique" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeudelogique" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
@@ -196,8 +168,13 @@
               <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeudelogique" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="modedejeu" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeudelogique" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jeudelogique" type="b2602c69:ProjectViewProjectNode" />
@@ -207,8 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,11 +191,19 @@
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory&#10;repository" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/log4j-core-2.11.2.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19310345" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chaetdim\Documents\Charlotte_Workspace\Workspace\jeudelogique\out\artifacts\jeudelogique_jar" />
+      <recent name="C:\Users\chaetdim\Documents\Charlotte_Workspace\Workspace\jeudelogique\src" />
+      <recent name="C:\Users\chaetdim\Documents\Charlotte_Workspace\Workspace\jeudelogique\src\main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,8 +217,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.jeudelogique.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="jeudelogique" />
       <option name="PROGRAM_PARAMETERS" value="dev" />
@@ -287,26 +272,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jeudelogique.jar" type="JarApplication" temporary="true">
+    <configuration default="true" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/jeudelogique_jar/jeudelogique.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\chaetdim\Documents\Charlotte_Workspace\Workspace\jeudelogique" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="jeudelogique" />
       <method v="2" />
     </configuration>
-    <configuration name="log4j-api-2.11.2.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/log4j-api-2.11.2.jar" />
+    <configuration name="jeudelogique.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/jeudelogique_jar/jeudelogique.jar" />
+      <option name="PROGRAM_PARAMETERS" value="dev" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\chaetdim\Documents\Charlotte_Workspace\Workspace\jeudelogique" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="jeudelogique" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JAR Application.jeudelogique.jar" />
-      <item itemvalue="JAR Application.log4j-api-2.11.2.jar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JAR Application.jeudelogique.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JAR Application.log4j-api-2.11.2.jar" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -321,12 +311,21 @@
       <option name="presentableId" value="Default" />
       <updated>1562789352168</updated>
     </task>
+    <task id="LOCAL-00001" summary="update mode challengeur">
+      <created>1562801324826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562801324827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +334,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7479542" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47135842" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,15 +353,13 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update mode challengeur" />
+    <option name="LAST_COMMIT_MESSAGE" value="update mode challengeur" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="2054" column="14" selection-start-line="2054" selection-start-column="14" selection-end-line="2054" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ResourceBundle.java" />
     <entry file="file://$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -373,23 +370,9 @@
     <entry file="jar://$PROJECT_DIR$/lib/log4j-api-2.11.2.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7446">
-          <caret line="519" selection-start-line="519" selection-end-line="520" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/ClassLoader.java" />
     <entry file="file://$PROJECT_DIR$/all.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -401,16 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Defenseur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -418,61 +391,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jeudelogique.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-api-2.11.2.jar!/org/apache/logging/log4j/LogManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Random.java">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/jeudelogique_jar.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
+        <state relative-caret-position="529">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
+    <entry file="file://$PROJECT_DIR$/jeudelogique.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="125" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1010">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="484">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Duel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
+        <state relative-caret-position="1054">
           <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Random.java" />
+    <entry file="file://$PROJECT_DIR$/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1439">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jeudelogique_jar/all.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,6 +495,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor>
+            <show-sorted>false</show-sorted>
             <show-content>
               <type id="library" />
               <type id="artifact" />
@@ -492,6 +506,7 @@
             <option name="proportions">
               <list>
                 <option value="0.19310345" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -499,7 +514,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -511,7 +526,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>apache-log4j-2.11</last-edited>
+          <last-edited>log4j-core-2.11.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -540,7 +555,6 @@
             <option name="proportions">
               <list>
                 <option value="0.19310345" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
