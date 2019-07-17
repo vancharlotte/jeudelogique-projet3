@@ -16,7 +16,7 @@ public class User extends Player {
 
     /**
      * valider le format de la saisie utilisateur (combinaison/proposition)
-     * @return boolean chosenCombiIsCorrect 
+     * @return boolean chosenCombiIsCorrect
      * @throws NumberFormatException
      */
 
@@ -96,51 +96,73 @@ public class User extends Player {
      * indice donné par utilisateur
      * @param hint indice donné par l'utilisateur
      * @param game jeu sélectionné
-     * @throws InputMismatchException
      */
     public void selectHint(List<Object>hint, Game game) {
-        List<Object> userHint = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         logger.info("Votre combinaison secrète est " + code + ". Donnez un indice à l'ordinateur : ");
         if (game instanceof PlusOuMoins) {
             String input = sc.nextLine();
-            if (input.length() != config.getSizeCode()) {
+            boolean hintIsCorrect = hintIsCorrectPOM(hint, input);
+            if (!hintIsCorrect) {
                 logger.error("erreur saisie");
                 logger.info("Votre indice est incorrecte, il fallait donner l'indice : " + hint + ". Recommencez.");
                 selectHint(hint, game);
-            } else {
-                userHint.clear();
-                for (int i = 0; i < config.getSizeCode(); i++) {
-                    userHint.add(input.charAt(i));
-                }
-                if (!userHint.equals(hint)) {
-                    logger.error("erreur saisie");
-                    logger.info("Votre indice est incorrecte, il fallait donner l'indice : " + hint + ". Recommencez.");
-                    selectHint(hint, game);
-                }
             }
         } else if (game instanceof Mastermind) {
-            try {
-                logger.info("Combien de chiffres sont bien placés?");
-                int input1 = sc.nextInt();
-                userHint.add(input1);
-                logger.info("Combien de chiffres sont mal placés?");
-                int input2 = sc.nextInt();
-                userHint.add(input2);
-                if (!userHint.equals(hint)) {
-                    logger.error("erreur saisie");
-                    logger.info("Votre indice est incorrecte, il fallait donner l'indice : " + hint + ". Recommencez.");
-                    selectHint(hint, game);
-                } else {
-                    userHint.clear();
-                }
-            }
-            catch (InputMismatchException e) {
+            logger.info("Combien de chiffres sont bien placés?");
+            int input1 = sc.nextInt();
+            logger.info("Combien de chiffres sont mal placés?");
+            int input2 = sc.nextInt();
+            boolean hintIsCorrect = hintIsCorrectMM(hint, input1, input2);
+            if (!hintIsCorrect) {
                 logger.error("erreur saisie");
                 logger.info("Votre indice est incorrecte, il fallait donner l'indice : " + hint + ". Recommencez.");
                 selectHint(hint, game);
             }
-
         }
+    }
+
+    /**
+     * valider indice donné par utilisateur plus ou moins
+     * @param hint (indice généré par ordinateur) input (indice donné par utilisateur)
+     * @return boolean hintIsCorrect
+     */
+    public boolean hintIsCorrectPOM(List<Object>hint,String input){
+        boolean hintIsCorrect = true;
+        List<Object> userHintPOM = new ArrayList<>();
+        if (input.length() != config.getSizeCode()) {
+            hintIsCorrect = false;}
+        else {
+            userHintPOM.clear();
+            for (int i = 0; i < config.getSizeCode(); i++) {
+                userHintPOM.add(input.charAt(i));
+            }
+            if (!userHintPOM.equals(hint)) {
+                hintIsCorrect = false;}
+        }
+	return hintIsCorrect;
+}
+
+    /**
+     * valider indice donné par utilisateur mastermind
+     *      * @param hint (indice généré par ordinateur) input (indice donné par utilisateur)
+     *      * @return boolean hintIsCorrect
+     * return boolean hintIsCorrect
+     * @throws InputMismatchException
+     */
+    public boolean hintIsCorrectMM(List<Object>hint, int input1, int input2){
+        boolean hintIsCorrect = true;
+        List<Object> userHintMM = new ArrayList<>();
+        userHintMM.clear();
+        userHintMM.add(input1);
+        userHintMM.add(input2);
+        try{
+            if (!userHintMM.equals(hint)) {
+                    hintIsCorrect = false;}
+        }
+        catch (InputMismatchException e) {
+            hintIsCorrect = false;
+        }
+        return hintIsCorrect;
     }
 }
