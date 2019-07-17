@@ -12,80 +12,69 @@ import java.util.Scanner;
 public class User extends Player {
     public List<Integer> code = new ArrayList<>();
     public List<Integer> proposal = new ArrayList<>();
+    String chosenCombi;
 
     /**
-     * choix combinaison secrète utilisateur / mode défenseur, mode duel
+     * valider le format de la saisie utilisateur (combinaison/proposition)
+     * @return boolean chosenCombiIsCorrect 
      * @throws NumberFormatException
      */
-    public void selectCode() {
-        code.clear();
+
+    public boolean chosenCombiIsCorrect(){
         Scanner sc = new Scanner(System.in);
+        this.chosenCombi = sc.nextLine();
+        boolean chosenCombiIsCorrect;
+        try{
+            if (chosenCombi.length() != config.getSizeCode()) {
+                chosenCombiIsCorrect = false;}
+            else if (!selectedNumber(chosenCombi)){
+                chosenCombiIsCorrect = false;}
+            else {
+                chosenCombiIsCorrect = true;}
+        }
+        catch (NumberFormatException e){
+            chosenCombiIsCorrect = false;
+        }
+        return chosenCombiIsCorrect;
+    }
+
+    /** choix combinaison secrète utilisateur / mode défenseur, mode duel*/
+    public void selectCode(){
+        code.clear();
         logger.info("Choisissez votre combinaison secrète à " + config.getSizeCode() + " chiffres :");
         logger.info("Elle doit être composée de chiffres compris entre 0 et " + config.getNumber());
-        try{
-        String chosenCombi = sc.nextLine();
-        if (chosenCombi.length() != config.getSizeCode()) {
-            logger.error("erreur saisie");
-            logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
-            selectCode();
-        }
-        else if (!selectedNumber(chosenCombi)){
-            logger.error("erreur saisie");
-            logger.info("Les chiffres doivent être compris entre 0 et " + config.getNumber()+ ".");
-            selectCode();
-        }
-        else {
+        boolean correctCombi = chosenCombiIsCorrect();
+        if (correctCombi){
             for (int i = 0; i < config.getSizeCode(); i++) {
                 code.add(Integer.parseInt(String.valueOf(chosenCombi.charAt(i))));
             }
             logger.info("Votre combinaison secrète est : " + code);
         }
-            } catch (NumberFormatException e) {
-                logger.error("erreur saisie");
-                logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
-                selectCode();
-            }
-
+        else {
+            logger.error("erreur saisie");
+            logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
+            selectCode();
+        }
     }
 
 
-    /**choix proposition par utilisateur / mode challengeur, mode duel
-     * @throws NumberFormatException*/
+
+    /**choix proposition par utilisateur / mode challengeur, mode duel */
     public void  selectProposal(){
-        Scanner sc = new Scanner(System.in);
         proposal.clear();
         logger.info("Entrez une proposition de réponse à " + config.getSizeCode() + " chiffres :");
-        try{
-        String chosenProposal = sc.nextLine();
-         if (chosenProposal.length() != config.getSizeCode()) {
-             logger.error("erreur saisie");
-             logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
-             selectProposal();
-         }
-         else if (!selectedNumber(chosenProposal)){
-             logger.error("erreur saisie");
-             logger.info("Les chiffres doivent être compris entre 0 et " + config.getNumber()+ ".");
-             selectProposal();
-         }
-         else {
-             for (int i = 0; i < config.getSizeCode(); i++) {
-                 if (Integer.parseInt(String.valueOf(chosenProposal.charAt(i))) > config.getNumber()) {
-                     logger.error("erreur saisie");
-                     logger.info("les chiffres choisis doivent être compris entre 0 et " + config.getNumber());
-                     selectProposal();
-                 }
-             }
-             for (int i = 0; i < config.getSizeCode(); i++) {
-                 proposal.add(Integer.parseInt(String.valueOf(chosenProposal.charAt(i))));
-             }
-         }
-         } catch (NumberFormatException e) {
-                logger.error("erreur saisie {}",e.getMessage());
-                logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
-                selectProposal();
+        boolean correctCombi = chosenCombiIsCorrect();
+        if (correctCombi){
+            for (int i = 0; i < config.getSizeCode(); i++) {
+                proposal.add(Integer.parseInt(String.valueOf(chosenCombi.charAt(i))));
             }
         }
-
+        else {
+            logger.error("erreur saisie");
+            logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
+            selectProposal();
+        }
+    }
 
 
     /**
