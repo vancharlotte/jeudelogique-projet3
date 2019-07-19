@@ -12,22 +12,18 @@ import java.util.Scanner;
 public class User extends Player {
     public List<Integer> code = new ArrayList<>();
     public List<Integer> proposal = new ArrayList<>();
-    String chosenCombi;
 
     /**
      * valider le format de la saisie utilisateur (combinaison/proposition)
      * @return boolean chosenCombiIsCorrect
      * @throws NumberFormatException
      */
-
-    public boolean chosenCombiIsCorrect(){
-        Scanner sc = new Scanner(System.in);
-        this.chosenCombi = sc.nextLine();
+    public boolean chosenCombiIsCorrect(String Combi){
         boolean chosenCombiIsCorrect;
         try{
-            if (chosenCombi.length() != config.getSizeCode()) {
+            if (Combi.length() != config.getSizeCode()) {
                 chosenCombiIsCorrect = false;}
-            else if (!selectedNumber(chosenCombi)){
+            else if (!selectedNumber(Combi)){
                 chosenCombiIsCorrect = false;}
             else {
                 chosenCombiIsCorrect = true;}
@@ -40,13 +36,15 @@ public class User extends Player {
 
     /** choix combinaison secrète utilisateur / mode défenseur, mode duel*/
     public void selectCode(){
+        Scanner sc = new Scanner(System.in);
+        String chosenCode = sc.nextLine();
         code.clear();
         logger.info("Choisissez votre combinaison secrète à " + config.getSizeCode() + " chiffres :");
         logger.info("Elle doit être composée de chiffres compris entre 0 et " + config.getNumber());
-        boolean correctCombi = chosenCombiIsCorrect();
+        boolean correctCombi = chosenCombiIsCorrect(chosenCode);
         if (correctCombi){
             for (int i = 0; i < config.getSizeCode(); i++) {
-                code.add(Integer.parseInt(String.valueOf(chosenCombi.charAt(i))));
+                code.add(Integer.parseInt(String.valueOf(chosenCode.charAt(i))));
             }
             logger.info("Votre combinaison secrète est : " + code);
         }
@@ -61,12 +59,14 @@ public class User extends Player {
 
     /**choix proposition par utilisateur / mode challengeur, mode duel */
     public void  selectProposal(){
+        Scanner sc = new Scanner(System.in);
+        String chosenProposal = sc.nextLine();
         proposal.clear();
         logger.info("Entrez une proposition de réponse à " + config.getSizeCode() + " chiffres :");
-        boolean correctCombi = chosenCombiIsCorrect();
+        boolean correctCombi = chosenCombiIsCorrect(chosenProposal);
         if (correctCombi){
             for (int i = 0; i < config.getSizeCode(); i++) {
-                proposal.add(Integer.parseInt(String.valueOf(chosenCombi.charAt(i))));
+                proposal.add(Integer.parseInt(String.valueOf(chosenProposal.charAt(i))));
             }
         }
         else {

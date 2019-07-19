@@ -27,15 +27,15 @@ public class Menu {
      * @throws InputMismatchException
      */
     private static Game DisplayMenuJeu(){
-        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres.\n " +
+        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
                 "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
-                " essais possibles.\n");
+                " essais possibles.");
 
         Scanner sc = new Scanner(System.in);
-        logger.info("Avec quel mode de jeu souhaitez-vous jouer?\n"+
-                    "- tapez 1 pour jouer à Plus ou Moins \n (indice = chiffre de la combinaison est plus grand (+), plus petit (-) ou c'est le bon (=)) \n "+
-                    "- tapez 2 pour jouer au Mastermind \n (indice = nombre de chiffres bien placés et mal placés) \n"+
-                    "Saisissez votre choix : ");
+        logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
+        logger.info("tapez 1 pour jouer à Plus ou Moins (indice = chiffre de la combinaison est plus grand (+), plus petit (-) ou c'est le bon (=))");
+        logger.info("tapez 2 pour jouer au Mastermind  (indice = nombre de chiffres bien placés et mal placés)");
+        logger.info("Saisissez votre choix : ");
         try {
             int selectedGame = sc.nextInt();
             if (selectedGame ==1){
@@ -44,7 +44,6 @@ public class Menu {
             }
             else if (selectedGame==2){
                 game = new Mastermind();
-                logger.info("Indiquez à votre adversaire le nombre de chiffres bien placés et mal placés.");
                 return game;
             }
             else{
@@ -66,11 +65,11 @@ public class Menu {
     public static void DisplayMenuModeJeu(){
         game = DisplayMenuJeu();
         Scanner sc = new Scanner(System.in);
-        logger.info("Avec quel mode de jeu souhaitez-vous jouer? \n" +
-                "- tapez 1 pour jouer au mode Challengeur \n" +
-                "- tapez 2 pour jouer au mode Defenseur \n" +
-                "- tapez 3 pour jouer au mode Duel \n" +
-                "Saisissez votre choix : ");
+        logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
+        logger.info("tapez 1 pour jouer au mode Challengeur");
+        logger.info("tapez 2 pour jouer au mode Defenseur");
+        logger.info("tapez 3 pour jouer au mode Duel");
+        logger.info("Saisissez votre choix : ");
         try {
             int selectedMode = sc.nextInt();
             switch (selectedMode) {
