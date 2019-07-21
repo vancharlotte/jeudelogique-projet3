@@ -26,7 +26,7 @@ public class Menu {
      * @return choix utilisateur
      * @throws InputMismatchException
      */
-    private static Game DisplayMenuJeu(){
+   /* private static Game DisplayMenuJeu(){
         logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
                 "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
                 " essais possibles.");
@@ -40,10 +40,12 @@ public class Menu {
             int selectedGame = sc.nextInt();
             if (selectedGame ==1){
                 game = new PlusOuMoins();
+                logger.info("Vous avez choisi de jouer  au Plus ou Moins.");
                 return game;
             }
             else if (selectedGame==2){
                 game = new Mastermind();
+                logger.info("Vous avez choisi de jouer  au MasterMind.");
                 return game;
             }
             else{
@@ -58,44 +60,124 @@ public class Menu {
             DisplayMenuJeu();
         }
         return game;
+    }*/
+
+    /** affichage sélection du jeu et lancement de la partie
+     * @throws InputMismatchException*/
+
+       private static void displayMenuJeu(){
+        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
+                "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
+                " essais possibles.");
+
+        Scanner sc = new Scanner(System.in);
+        logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
+        logger.info("tapez 1 pour jouer à Plus ou Moins (indice = chiffre de la combinaison est plus grand (+), plus petit (-) ou c'est le bon (=))");
+        logger.info("tapez 2 pour jouer au Mastermind  (indice = nombre de chiffres bien placés et mal placés)");
+        logger.info("Saisissez votre choix : ");
+        try{
+            int selectedGame = sc.nextInt();
+            initJeu(selectedGame);
+            if (selectedGame ==1){
+                logger.info("Vous avez choisi de jouer  au Plus ou Moins.");
+            }
+            else if (selectedGame==2){
+                logger.info("Vous avez choisi de jouer  au MasterMind.");
+            }
+            else{
+                logger.error("erreur saisie");
+                logger.info("Votre choix n'est pas valide. Veullez entrer 1 ou 2. ");
+                displayMenuJeu();
+            }
+        }
+        catch(InputMismatchException e) {
+            logger.error("erreur saisie");
+            logger.info("Votre choix n'est pas valide. Veuillez entrer 1 ou 2. ");
+            displayMenuJeu();
+        }
     }
 
-    /** sélection du mode jeu
+    /** méthode qui instancie le jeu en fonction de la sasie utilisateur
+     * @param selectedGame input utilisateur, choix du jeu
+     * @return instance du jeu sélectionné
+     */
+    public static Game initJeu (int selectedGame){
+        if (selectedGame ==1){
+            game = new PlusOuMoins();
+        }
+        else if (selectedGame==2){
+            game = new Mastermind();
+        }
+        else{
+            game = new Game();
+
+        }
+       return game;
+
+    }
+
+    /** affichage sélection du mode jeu et lancement de la partie
      * @throws InputMismatchException*/
-    public static void DisplayMenuModeJeu(){
-        game = DisplayMenuJeu();
+    public static void displayMenuModeJeu(){
+        displayMenuJeu();
         Scanner sc = new Scanner(System.in);
         logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
         logger.info("tapez 1 pour jouer au mode Challengeur");
         logger.info("tapez 2 pour jouer au mode Defenseur");
         logger.info("tapez 3 pour jouer au mode Duel");
         logger.info("Saisissez votre choix : ");
-        try {
+        try{
             int selectedMode = sc.nextInt();
+            initModeJeu(selectedMode);
             switch (selectedMode) {
                 case 1:
-                    gameplay=new Challengeur(game);
+                    logger.info("vous avez choisi le mode Challengeur.");
                     gameplay.play();
                     break;
                 case 2:
-                    gameplay =new Defenseur(game);
+                    logger.info("vous avez choisi le mode Defenseur.");
                     gameplay.play();
                     break;
                 case 3:
-                    gameplay = new Duel(game);
+                    logger.info("vous avez choisi le mode Duel.");
                     gameplay.play();
                     break;
                 default :
                     logger.error("erreur saisie");
-                    logger.info("Votre choix n'est pas valide. Veullez entrer 1 ou 2. ");
-                    DisplayMenuModeJeu();
+                    logger.info("Votre choix n'est pas valide. Veullez entrer 1, 2 ou 3. ");
+                    displayMenuModeJeu();
                     break;
             }
         }
         catch(InputMismatchException e) {
-            logger.error("erreur saisie");
-            logger.info("Votre choix n'est pas valide. Veullez entrer 1 ou 2. ");
-            DisplayMenuModeJeu();
+            displayMenuModeJeu();
         }
     }
+
+    /** méthode qui instancie le mode de jeu en fonction de la sasie utilisateur
+     * @param selectedMode input utilisateur choix du mode jeu
+     * @return instance du mode de jeu sélectionné
+     */
+    public static ModeDeJeu initModeJeu (int selectedMode){
+        switch (selectedMode) {
+            case 1:
+                gameplay=new Challengeur(game);
+                break;
+            case 2:
+                gameplay =new Defenseur(game);
+                break;
+            case 3:
+                gameplay = new Duel(game);
+                break;
+            default :
+                gameplay = new ModeDeJeu(game);
+                break;
+        }
+        return gameplay;
+
+    }
+
+
+
+
 }

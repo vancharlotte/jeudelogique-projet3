@@ -2,7 +2,8 @@ package main;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import static main.Menu.DisplayMenuModeJeu;
+
+import static main.Menu.displayMenuModeJeu;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger();
@@ -11,13 +12,13 @@ public class Main {
 
 /** Le mode développeur peut être lancé à partir de la class Main */
     public static void main(String[] args) {
-            if (args.length!= 0 && args.equals("dev")) {
-                modeDev = true;
-            } else {
-                modeDev = config.isModeDev();
-            }
+        if (args.length!= 0 && args.equals("dev")) {
+            modeDev = true;
+        } else {
+            modeDev = config.isModeDev();
+        }
         if (modeDev){logger.info("mode développeur activé");}
-        DisplayMenuModeJeu();
+        displayMenuModeJeu();
 
     }
 

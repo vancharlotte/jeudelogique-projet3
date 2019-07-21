@@ -1,5 +1,6 @@
-package main.joueur;
+package test.main.joueur;
 
+import main.joueur.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class UserTest {
 
-    User user;
+    private User user;
 
     @Before
     public void init(){

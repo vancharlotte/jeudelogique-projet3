@@ -37,16 +37,15 @@ public class User extends Player {
     /** choix combinaison secrète utilisateur / mode défenseur, mode duel*/
     public void selectCode(){
         Scanner sc = new Scanner(System.in);
-        String chosenCode = sc.nextLine();
         code.clear();
         logger.info("Choisissez votre combinaison secrète à " + config.getSizeCode() + " chiffres :");
         logger.info("Elle doit être composée de chiffres compris entre 0 et " + config.getNumber());
+        String chosenCode = sc.nextLine();
         boolean correctCombi = chosenCombiIsCorrect(chosenCode);
         if (correctCombi){
             for (int i = 0; i < config.getSizeCode(); i++) {
                 code.add(Integer.parseInt(String.valueOf(chosenCode.charAt(i))));
             }
-            logger.info("Votre combinaison secrète est : " + code);
         }
         else {
             logger.error("erreur saisie");
@@ -60,9 +59,10 @@ public class User extends Player {
     /**choix proposition par utilisateur / mode challengeur, mode duel */
     public void  selectProposal(){
         Scanner sc = new Scanner(System.in);
-        String chosenProposal = sc.nextLine();
         proposal.clear();
         logger.info("Entrez une proposition de réponse à " + config.getSizeCode() + " chiffres :");
+        String chosenProposal = sc.nextLine();
+
         boolean correctCombi = chosenCombiIsCorrect(chosenProposal);
         if (correctCombi){
             for (int i = 0; i < config.getSizeCode(); i++) {

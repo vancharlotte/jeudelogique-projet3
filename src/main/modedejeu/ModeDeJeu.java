@@ -62,7 +62,7 @@ public class ModeDeJeu {
                     play();
                     break;
                 case 2:
-                    Menu.DisplayMenuModeJeu();
+                    Menu.displayMenuModeJeu();
                     break;
                 case 3:
                     logger.info("Merci d'avoir joué!");
