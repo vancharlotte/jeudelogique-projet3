@@ -43,10 +43,12 @@ public class Computer extends Player {
     public void selectProposal(List<Object> hint, int nbTrials, Game game) {
         if (game instanceof PlusOuMoins){
             selectProposalPOM(hint, nbTrials);
+
         }
         else if (game instanceof Mastermind){
             selectProposalMM(hint, nbTrials);
         }
+
     }
 
     /**
@@ -98,36 +100,12 @@ public class Computer extends Player {
                 chooseCode();
             }
         logger.info("L'ordi vous propose :" + proposal);
+
     }
 
     /**
-     * méthode qui permet à l'ordinateur de sélectionner une proposition  pour le mastermind
-     * - trouver tous les chiffres présents dans la combinaison
-     * - mélanger les chiffres présents jusqu'à trouver la bonne combinaison
-     * @param hint dernier indice donné à l'ordinateur
-     * @param nbTrials nombres d'essais utilisésals
-     */
-    public void selectProposalMM(List<Object> hint, int nbTrials){
-        if (nbTrials!=0&&present.size()<config.getSizeCode()){
-            int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
-            for (int i = 0; i < nbHint; i++) {
-                present.add(proposal.get(0));
-            }
-        }
-        if(present.size()<config.getSizeCode()){
-            selectFromNumber();
-        }
-        else if (present.size()==config.getSizeCode()){
-            selectFromPresentNumber();
-        }
-        List<Object> newProposal = new ArrayList<>();
-        newProposal.addAll(proposal);
-        proposalList.add(newProposal);
-        logger.info("L'ordi vous propose :" + proposal);
-    }
-
-    /**
-     * créer une liste des chiffres disponibles pour chaque index de la combinaison (fonction du fichier de configuration)
+     * créer une liste des chiffres disponibles pour chaque index de la combinaison
+     * (fonction du fichier de configuration) / jeu plusoumoins
      * @return liste des chiffres possibles
      */
     private List createCodeList() {
@@ -156,8 +134,36 @@ public class Computer extends Player {
     }
 
     /**
+     * méthode qui permet à l'ordinateur de sélectionner une proposition  pour le mastermind
+     * - trouver tous les chiffres présents dans la combinaison
+     * - mélanger les chiffres présents jusqu'à trouver la bonne combinaison
+     * @param hint dernier indice donné à l'ordinateur
+     * @param nbTrials nombres d'essais utilisés     */
+    public void selectProposalMM(List<Object> hint, int nbTrials){
+        if (nbTrials!=0&&present.size()<config.getSizeCode()){
+            int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
+            for (int i = 0; i < nbHint; i++) {
+                present.add(proposal.get(0));
+            }
+        }
+        if(present.size()<config.getSizeCode()){
+            selectFromNumber();
+        }
+        else if (present.size()==config.getSizeCode()){
+            selectFromPresentNumber();
+        }
+        List<Object> newProposal = new ArrayList<>();
+        newProposal.addAll(proposal);
+        proposalList.add(newProposal);
+        logger.info("L'ordi vous propose :" + proposal);
+
+    }
+
+
+
+    /**
      * l'ordinateur choisit une nouvelle proposition composé du même chiffre pour mastermind (lorsque tous les chiffres
-     * présents n'ont pas encore été trouvés par l'ordinateur)
+     * présents n'ont pas encore été trouvés par l'ordinateur) /jeu mastermind
      */
     private void selectFromNumber() {
         Random rd = new Random();
@@ -171,7 +177,7 @@ public class Computer extends Player {
     }
 
     /**
-     * l'ordinateur choisit une nouvelle proposition aléatoire composés des chiffres présents (mastermind)
+     * l'ordinateur choisit une nouvelle proposition aléatoire composés des chiffres présents /jeu mastermind
      */
     private void selectFromPresentNumber(){
         Random rd = new Random();

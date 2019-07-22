@@ -12,7 +12,7 @@ public class Main {
 
 /** Le mode développeur peut être lancé à partir de la class Main */
     public static void main(String[] args) {
-        if (args.length!= 0 && args.equals("dev")) {
+        if (args.length > 0 && args[0].contains("dev")) {
             modeDev = true;
         } else {
             modeDev = config.isModeDev();

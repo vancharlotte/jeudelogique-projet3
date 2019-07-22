@@ -46,17 +46,39 @@ public class UserTest {
     }
 
     @Test
+    public void selectCode(){
+
+    }
+    @Test
+    public void selectProposal(){
+
+    }
+
+    @Test
+    public void selectHint(){
+
+    }
+
+
+    @Test
     public void hintIsCorrectPOMTest() {
-        /*input même longueur que dans fichier de config*/
-        /*hint et input m^eme valeur*/
         List<Object> hint = new ArrayList<>();
-        Assert.assertFalse(user.hintIsCorrectPOM(hint, "1234"));
+        hint.add("+");
+        hint.add("+");
+        hint.add("+");
+        hint.add("+");
+        Assert.assertFalse(user.hintIsCorrectPOM(hint,"-+-+-"));
+        Assert.assertFalse(user.hintIsCorrectPOM(hint,"++++"));
+
     }
 
     @Test
     public void hintIsCorrectMMTest(){
-        /*hint1 = input1
-          hint2 = input2 */
+        List<Object> hint = new ArrayList<>();
+        hint.add("1");
+        hint.add("0");
+        Assert.assertFalse(user.hintIsCorrectMM(hint,1, 2));
+
     }
 
 

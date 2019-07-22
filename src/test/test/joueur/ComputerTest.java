@@ -8,6 +8,7 @@ public class ComputerTest {
 
     @Test
     public void selectCode() {
+    /* accès au fichier de config?*/
     }
 
     @Test

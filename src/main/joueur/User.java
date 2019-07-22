@@ -34,6 +34,35 @@ public class User extends Player {
         return chosenCombiIsCorrect;
     }
 
+
+    /**
+     * méthode pour vérifier si les chiffres sélectionnés par utilisateur sont conformes
+     * aux chiffres disponibles (définis dans le fichier de configuration)
+     * @param combi combinaison proposé par l'utilisateur
+     * @return chiffres sélectionnés autorisés
+     */
+    public boolean selectedNumber(String combi){
+        boolean selectedNumber = true;
+        for (int i =0; i <config.getSizeCode(); i++){
+            if(Integer.parseInt(String.valueOf(combi.charAt(i)))>config.getNumber()){
+                selectedNumber = false; }
+        }
+        return  selectedNumber;
+    }
+
+    /**
+     * méthode pour vérifier si la taille de la combinaison choisi par utilisateur et de la bonne taille
+     * (définis dans le fichier de configuration)
+     * @param combi combinaison proposé par l'utilisateur
+     * @return tailel de la combinaison correcte
+     */
+    public boolean goodSizeCode(String combi){
+        boolean goodSizeCode = true;
+        if (combi.length() != config.getSizeCode()) {
+            goodSizeCode = false;}
+        return  goodSizeCode;
+    }
+
     /** choix combinaison secrète utilisateur / mode défenseur, mode duel*/
     public void selectCode(){
         Scanner sc = new Scanner(System.in);
@@ -77,33 +106,6 @@ public class User extends Player {
     }
 
 
-    /**
-     * méthode pour vérifier si les chiffres sélectionnés par utilisateur sont conformes
-     * aux chiffres disponibles (définis dans le fichier de configuration)
-     * @param combi combinaison proposé par l'utilisateur
-     * @return chiffres sélectionnés autorisés
-     */
-    public boolean selectedNumber(String combi){
-        boolean selectedNumber = true;
-        for (int i =0; i <config.getSizeCode(); i++){
-           if(Integer.parseInt(String.valueOf(combi.charAt(i)))>config.getNumber()){
-               selectedNumber = false; }
-        }
-        return  selectedNumber;
-    }
-
-    /**
-     * méthode pour vérifier si la taille de la combinaison choisi par utilisateur et de la bonne taille
-     * (définis dans le fichier de configuration)
-     * @param combi combinaison proposé par l'utilisateur
-     * @return tailel de la combinaison correcte
-     */
-    public boolean goodSizeCode(String combi){
-        boolean goodSizeCode = true;
-        if (combi.length() != config.getSizeCode()) {
-            goodSizeCode = false;}
-        return  goodSizeCode;
-    }
 
     /**
      * indice donné par utilisateur
