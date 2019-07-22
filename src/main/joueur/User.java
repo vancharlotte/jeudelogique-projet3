@@ -18,12 +18,12 @@ public class User extends Player {
      * @return boolean chosenCombiIsCorrect
      * @throws NumberFormatException
      */
-    public boolean chosenCombiIsCorrect(String Combi){
+    public boolean chosenCombiIsCorrect(String combi){
         boolean chosenCombiIsCorrect;
         try{
-            if (Combi.length() != config.getSizeCode()) {
+            if (!goodSizeCode(combi)) {
                 chosenCombiIsCorrect = false;}
-            else if (!selectedNumber(Combi)){
+            else if (!selectedNumber(combi)){
                 chosenCombiIsCorrect = false;}
             else {
                 chosenCombiIsCorrect = true;}
@@ -90,6 +90,19 @@ public class User extends Player {
                selectedNumber = false; }
         }
         return  selectedNumber;
+    }
+
+    /**
+     * méthode pour vérifier si la taille de la combinaison choisi par utilisateur et de la bonne taille
+     * (définis dans le fichier de configuration)
+     * @param combi combinaison proposé par l'utilisateur
+     * @return tailel de la combinaison correcte
+     */
+    public boolean goodSizeCode(String combi){
+        boolean goodSizeCode = true;
+        if (combi.length() != config.getSizeCode()) {
+            goodSizeCode = false;}
+        return  goodSizeCode;
     }
 
     /**

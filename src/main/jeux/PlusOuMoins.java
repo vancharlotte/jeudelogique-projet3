@@ -13,8 +13,8 @@ public class PlusOuMoins extends Game {
      * @return hint indice pour l'adversaire
      */
     public String generateHint(List<Integer> code, List<Integer> proposal) {
-        hint.clear();
-        for (int index =0; index<config.getSizeCode(); index++){
+            hint.clear();
+            for (int index =0; index<code.size(); index++){
             int a = code.get(index);
             int b = proposal.get(index);
             if (a==b){

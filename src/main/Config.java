@@ -33,16 +33,32 @@ public class Config {
         return sizeCode;
     }
 
+    public void setSizeCode(int sizeCode) {
+        this.sizeCode = sizeCode;
+    }
+
     public int getNbTrialMax() {
         return nbTrialMax;
+    }
+
+    public void setNbTrialMax(int nbTrialMax) {
+        this.nbTrialMax = nbTrialMax;
     }
 
     public int getNumber() {
         return  number;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
     public boolean isModeDev() {
         return modeDev;
+    }
+
+    public void setModeDev(boolean modeDev) {
+        this.modeDev = modeDev;
     }
 
 

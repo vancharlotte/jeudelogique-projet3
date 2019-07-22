@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    public  List<Object> hint = new ArrayList<>();
-    protected Config config = new Config();
+    public static List<Object> hint = new ArrayList<>();
+    protected static Config config = new Config();
 
     /**
      * méthode qui génére l'indice pour l'adversaire

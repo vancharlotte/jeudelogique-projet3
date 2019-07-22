@@ -21,12 +21,12 @@ public class Mastermind extends Game {
         int wrongPosition = 0;
 
 
-        for(int i =0; i<config.getSizeCode(); i++){
+        for(int i =0; i<code.size(); i++){
             if(copyCode.get(i).equals(proposal.get(i))){
                 rightPosition++;
                 copyCode.set(i,"ok");
             }
-            for(int j=0; j <config.getSizeCode();j++){
+            for(int j=0; j <code.size();j++){
                 if(copyCode.get(i).equals(proposal.get(j))){
                     wrongPosition++;
                     copyCode.set(i,"ok");

@@ -1,5 +1,6 @@
 package test.main.joueur;
 
+import main.Config;
 import main.joueur.User;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,11 +13,13 @@ import static org.junit.Assert.*;
 
 public class UserTest {
 
-    private User user;
+    private User user = new User();
+    Config config = new Config();
 
     @Before
     public void init(){
-        this.user =new User();
+        config.setNumber(5);
+        config.setSizeCode(4);
     }
 
     @Test
@@ -31,9 +34,15 @@ public class UserTest {
     }
 
     @Test
-    public void selecteNumberTest(){
-        /*chiffres autorisés par le fichier de config => false*/
+    public void selectedNumberTest(){
+        Assert.assertTrue(user.selectedNumber("0145"));
+        Assert.assertFalse(user.selectedNumber("6789"));
+    }
 
+    @Test
+    public void goodSizeCodeTest() {
+        Assert.assertTrue(user.goodSizeCode("1234"));
+        Assert.assertFalse(user.goodSizeCode("12345"));
     }
 
     @Test
@@ -50,9 +59,5 @@ public class UserTest {
           hint2 = input2 */
     }
 
-
-    @Test
-    public void selectedNumberTest() {
-    }
 
 }
