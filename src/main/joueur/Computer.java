@@ -138,11 +138,13 @@ public class Computer extends Player {
      * - trouver tous les chiffres présents dans la combinaison
      * - mélanger les chiffres présents jusqu'à trouver la bonne combinaison
      * @param hint dernier indice donné à l'ordinateur
-     * @param nbTrials nombres d'essais utilisés     */
+     * @param nbTrials nombres d'essais utilisésals
+     */
     public void selectProposalMM(List<Object> hint, int nbTrials){
-        if (nbTrials==0){
+        if (nbTrials ==0){
             proposalList.clear();
             present.clear();}
+
         if (nbTrials!=0&&present.size()<config.getSizeCode()){
             int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
             for (int i = 0; i < nbHint; i++) {
@@ -159,7 +161,6 @@ public class Computer extends Player {
         newProposal.addAll(proposal);
         proposalList.add(newProposal);
         logger.info("L'ordi vous propose :" + proposal);
-
     }
 
 
