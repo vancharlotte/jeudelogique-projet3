@@ -16,17 +16,17 @@ public class Duel extends ModeDeJeu {
         player2.selectCode();
         while (!gameEnd) {
             player1.selectProposal();
-            if (player2.code.equals(player1.proposal) || nbTrial == config.getNbTrialMax()) {
+            if (player2.code.equals(player1.proposal) || nbTrial == nbTrialMax) {
                 gameEnd = true;
-                sentenceEnd(player1.code,player2.proposal,player2.code,player1.proposal,nbTrial,config.getNbTrialMax());
+                sentenceEnd(player1.code,player2.proposal,player2.code,player1.proposal,nbTrial,nbTrialMax);
                 return;
             } else {
                 player2.selectProposal(hint,nbTrial, game);
                 String hintForUser = game.generateHint(player2.code,player1.proposal);
                 nbTrial++;
-                if (player1.code.equals(player2.proposal) || nbTrial == config.getNbTrialMax()) {
+                if (player1.code.equals(player2.proposal) || nbTrial == nbTrialMax) {
                     gameEnd = true;
-                    sentenceEnd(player1.code,player2.proposal,player2.code,player1.proposal,nbTrial,config.getNbTrialMax());
+                    sentenceEnd(player1.code,player2.proposal,player2.code,player1.proposal,nbTrial,nbTrialMax);
                     return;
                 } else {
                     String hintForIA  = game.generateHint(player1.code,player2.proposal);

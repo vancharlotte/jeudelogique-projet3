@@ -17,9 +17,9 @@ public class Challengeur extends ModeDeJeu  {
         while (!gameEnd) {
             player1.selectProposal();
             nbTrial++;
-            if (player2.code.equals(player1.proposal) || nbTrial == config.getNbTrialMax()) {
+            if (player2.code.equals(player1.proposal) || nbTrial ==nbTrialMax) {
                  gameEnd= true;
-                sentenceEnd(player2.code,player1.proposal,nbTrial,config.getNbTrialMax());
+                sentenceEnd(player2.code,player1.proposal,nbTrial,nbTrialMax);
                 return;
             } else {
                 logger.info("Vous avez proposé la combinaison :" + player1.proposal + ". => indice :" +game.generateHint(player2.code,player1.proposal));

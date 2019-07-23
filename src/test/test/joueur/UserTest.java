@@ -7,19 +7,23 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class UserTest {
 
-    private User user = new User();
+    User user = new User();
     Config config = new Config();
+
 
     @Before
     public void init(){
         config.setNumber(5);
         config.setSizeCode(4);
+
+
     }
 
     @Test
@@ -32,6 +36,7 @@ public class UserTest {
         Assert.assertFalse(user.chosenCombiIsCorrect("6789"));
         Assert.assertFalse(user.chosenCombiIsCorrect("abcd"));
     }
+
 
     @Test
     public void selectedNumberTest(){
@@ -60,24 +65,19 @@ public class UserTest {
     }
 
 
-    @Test
+    @Test /* ?*/
     public void hintIsCorrectPOMTest() {
-        List<Object> hint = new ArrayList<>();
-        hint.add("+");
-        hint.add("+");
-        hint.add("+");
-        hint.add("+");
+        List <Object> hint = new ArrayList<>(Arrays.asList("+","+","+","+"));
+        Assert.assertTrue(user.hintIsCorrectPOM(hint,"++++"));
         Assert.assertFalse(user.hintIsCorrectPOM(hint,"-+-+-"));
-        Assert.assertFalse(user.hintIsCorrectPOM(hint,"++++"));
 
     }
 
     @Test
     public void hintIsCorrectMMTest(){
-        List<Object> hint = new ArrayList<>();
-        hint.add("1");
-        hint.add("0");
-        Assert.assertFalse(user.hintIsCorrectMM(hint,1, 2));
+        List <Object> hint = new ArrayList<>(Arrays.asList(1,0));
+        Assert.assertTrue(user.hintIsCorrectMM(hint,1, 0));
+        Assert.assertFalse(user.hintIsCorrectMM(hint, 1,2));
 
     }
 

@@ -34,7 +34,6 @@ public class User extends Player {
         return chosenCombiIsCorrect;
     }
 
-
     /**
      * méthode pour vérifier si les chiffres sélectionnés par utilisateur sont conformes
      * aux chiffres disponibles (définis dans le fichier de configuration)
@@ -142,12 +141,12 @@ public class User extends Player {
      * @param hint (indice généré par ordinateur) input (indice donné par utilisateur)
      * @return boolean hintIsCorrect
      */
-    public boolean hintIsCorrectPOM(List<Object>hint,String input){
+    public boolean hintIsCorrectPOM(List<Object>hint,String input) {
         boolean hintIsCorrect = true;
         List<Object> userHintPOM = new ArrayList<>();
         if (input.length() != config.getSizeCode()) {
-            hintIsCorrect = false;}
-        else {
+            hintIsCorrect = false;
+        } else {
             userHintPOM.clear();
             for (int i = 0; i < config.getSizeCode(); i++) {
                 userHintPOM.add(input.charAt(i));
@@ -155,8 +154,8 @@ public class User extends Player {
             if (!userHintPOM.equals(hint)) {
                 hintIsCorrect = false;}
         }
-	return hintIsCorrect;
-}
+        return hintIsCorrect;
+    }
 
     /**
      * valider indice donné par utilisateur mastermind
@@ -173,7 +172,7 @@ public class User extends Player {
         userHintMM.add(input2);
         try{
             if (!userHintMM.equals(hint)) {
-                    hintIsCorrect = false;}
+                hintIsCorrect = false;}
         }
         catch (InputMismatchException e) {
             hintIsCorrect = false;

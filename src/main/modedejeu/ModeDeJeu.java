@@ -20,8 +20,9 @@ public class ModeDeJeu {
     protected static final Logger logger = LogManager.getLogger();
     protected Config config = new Config();
     protected Game game;
-    protected List<Object> hint = new ArrayList<>();
+    List<Object> hint = new ArrayList<>();
     int nbTrial;
+    int nbTrialMax = config.getNbTrialMax();
     boolean gameEnd;
     User player1 = new User();
     Computer player2 = new Computer();

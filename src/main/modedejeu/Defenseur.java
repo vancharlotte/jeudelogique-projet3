@@ -22,9 +22,9 @@ public class Defenseur extends ModeDeJeu {
                 player2.selectProposalMM(hint,nbTrial);
             }
             nbTrial++;
-            if (player1.code.equals(player2.proposal) || nbTrial == config.getNbTrialMax()) {
+            if (player1.code.equals(player2.proposal) || nbTrial == nbTrialMax) {
                 gameEnd = true;
-                sentenceEnd(player1.code,player2.proposal,nbTrial, config.getNbTrialMax());
+                sentenceEnd(player1.code,player2.proposal,nbTrial, nbTrialMax);
                 return;
             } else {
                 String hintForIA  = game.generateHint(player1.code,player2.proposal);
@@ -49,8 +49,6 @@ public class Defenseur extends ModeDeJeu {
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non
-     * @param proposalList liste de propositions de la partie précedécente
-     * @param present chiffres présents dans la combinaison à trouver à la partie précédente
      */
     @Override
     public void replay() {

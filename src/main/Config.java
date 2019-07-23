@@ -14,7 +14,6 @@ public class Config {
     private ResourceBundle bundle = ResourceBundle.getBundle("resources.config");
     private static final Logger logger = LogManager.getLogger();
 
-
     /** configuration du jeu
      * @throws MissingResourceException*/
     public Config() {
@@ -25,7 +24,7 @@ public class Config {
             modeDev = Boolean.parseBoolean(bundle.getString("modeDev"));
         }
         catch (MissingResourceException e ){
-        logger.fatal("fichier de configuration introuvable.");
+        logger.fatal("Le fichier de configuration introuvable.");
         }
     }
 
@@ -61,5 +60,8 @@ public class Config {
         this.modeDev = modeDev;
     }
 
+    public void setBundle(ResourceBundle bundle) {
+        this.bundle = bundle;
+    }
 
 }

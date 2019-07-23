@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    public static List<Object> hint = new ArrayList<>();
+    public List<Object> hint = new ArrayList<>();
     protected static Config config = new Config();
 
     /**
