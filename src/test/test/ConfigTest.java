@@ -15,16 +15,5 @@ public class ConfigTest {
     config.setBundle(ResourceBundle.getBundle("resourcesabsentes.config"));
     }
 
-    @Test
-    public void getNbTrialMax() {
 
-    }
-
-    @Test
-    public void getNumber() {
-    }
-
-    @Test
-    public void isModeDev() {
-    }
 }

@@ -11,12 +11,14 @@ import java.util.Random;
 
 public class Computer extends Player {
 
-    public List<Integer> code = new ArrayList<>();
-    public List<Integer> proposal = new ArrayList<>();
     private List<List> codeList = new ArrayList<>();
     public List<Integer> present = new ArrayList<>();
     public List<Object> proposalList = new ArrayList<>();
 
+    public Computer(int codeSize, int number) {
+        super(codeSize, number);
+
+    }
 
     /**
      * choix combinaison secrète ordinateur / mode challengeur, mode duel
@@ -25,12 +27,12 @@ public class Computer extends Player {
     public void selectCode() {
         code.clear();
         Random rd = new Random();
-        for (int i = 0; i < config.getSizeCode(); i++) {
-            code.add(rd.nextInt(config.getNumber() ));//on peut choisir les chiffres entre 0 et 9 (à modif pr mastermind)
+        for (int i = 0; i < codeSize; i++) {
+            code.add(rd.nextInt(number ));
         }
         if (Main.isModeDev()) {
             logger.info("Mode dev : La combinaison secrète de l'ordinateur est : " + code);
-            logger.info("combinaison à " + config.getSizeCode()+ " chiffres comprise entre 0 et "+config.getNumber());
+            logger.info("combinaison à " + codeSize + " chiffres comprise entre 0 et "+number);
         }
     }
 
@@ -65,7 +67,7 @@ public class Computer extends Player {
             chooseCode();
 
         } else {
-                for (int i = 0; i < config.getSizeCode(); i++) {
+                for (int i = 0; i < codeSize; i++) {
                     List<Integer> possible = new ArrayList<>();
                     possible.clear();
                     possible = codeList.get(i);
@@ -108,10 +110,10 @@ public class Computer extends Player {
      * (fonction du fichier de configuration) / jeu plusoumoins
      * @return liste des chiffres possibles
      */
-    private List createCodeList() {
-        for (int i = 0; i < config.getSizeCode(); i++) {
+    public List createCodeList() {
+        for (int i = 0; i < codeSize; i++) {
             List<Integer> possibleNb = new ArrayList<>();
-            for (int j = 0; j < config.getNumber(); j++) {
+            for (int j = 0; j < (number+1); j++) {
                 possibleNb.add(j);
             }
             codeList.add(possibleNb);
@@ -125,7 +127,7 @@ public class Computer extends Player {
      */
     private List chooseCode() {
         Random rd = new Random();
-        for (int i = 0; i < config.getSizeCode(); i++) {
+        for (int i = 0; i < codeSize; i++) {
             List<Integer> possible = codeList.get(i);
             proposal.add(possible.get(rd.nextInt(possible.size())));
         }
@@ -145,16 +147,16 @@ public class Computer extends Player {
             proposalList.clear();
             present.clear();}
 
-        if (nbTrials!=0&&present.size()<config.getSizeCode()){
+        if (nbTrials!=0&&present.size()<codeSize){
             int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
             for (int i = 0; i < nbHint; i++) {
                 present.add(proposal.get(0));
             }
         }
-        if(present.size()<config.getSizeCode()){
+        if(present.size()<codeSize){
             selectFromNumber();
         }
-        else if (present.size()==config.getSizeCode()){
+        else if (present.size()== codeSize){
             selectFromPresentNumber();
         }
         List<Object> newProposal = new ArrayList<>();
@@ -171,9 +173,9 @@ public class Computer extends Player {
      */
     private void selectFromNumber() {
         Random rd = new Random();
-        int n = rd.nextInt(config.getNumber());
+        int n = rd.nextInt(codeSize);
         proposal.clear();
-        for (int i = 0; i < config.getSizeCode(); i++) {
+        for (int i = 0; i < codeSize; i++) {
             proposal.add(n);
         }
         if (proposalList.contains(proposal)) {
@@ -188,7 +190,7 @@ public class Computer extends Player {
         List<Integer> present2 = new ArrayList<>();
         present2.addAll(present);
         proposal.clear();
-        for (int i =0; i<config.getSizeCode();i++){
+        for (int i =0; i< codeSize;i++){
             int random = rd.nextInt(present2.size());
             proposal.add(present2.get(random));
             present2.remove(random);

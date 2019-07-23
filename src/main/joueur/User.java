@@ -10,8 +10,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class User extends Player {
-    public List<Integer> code = new ArrayList<>();
-    public List<Integer> proposal = new ArrayList<>();
+
+    public User(int codeSize, int number) {
+        super(codeSize, number);
+    }
+
 
     /**
      * valider le format de la saisie utilisateur (combinaison/proposition)
@@ -42,8 +45,8 @@ public class User extends Player {
      */
     public boolean selectedNumber(String combi){
         boolean selectedNumber = true;
-        for (int i =0; i <config.getSizeCode(); i++){
-            if(Integer.parseInt(String.valueOf(combi.charAt(i)))>config.getNumber()){
+        for (int i =0; i <codeSize; i++){
+            if(Integer.parseInt(String.valueOf(combi.charAt(i)))> number){
                 selectedNumber = false; }
         }
         return  selectedNumber;
@@ -57,7 +60,7 @@ public class User extends Player {
      */
     public boolean goodSizeCode(String combi){
         boolean goodSizeCode = true;
-        if (combi.length() != config.getSizeCode()) {
+        if (combi.length() != codeSize) {
             goodSizeCode = false;}
         return  goodSizeCode;
     }
@@ -66,12 +69,12 @@ public class User extends Player {
     public void selectCode(){
         Scanner sc = new Scanner(System.in);
         code.clear();
-        logger.info("Choisissez votre combinaison secrète à " + config.getSizeCode() + " chiffres :");
-        logger.info("Elle doit être composée de chiffres compris entre 0 et " + config.getNumber());
+        logger.info("Choisissez votre combinaison secrète à " + codeSize + " chiffres :");
+        logger.info("Elle doit être composée de chiffres compris entre 0 et " + number);
         String chosenCode = sc.nextLine();
         boolean correctCombi = chosenCombiIsCorrect(chosenCode);
         if (correctCombi){
-            for (int i = 0; i < config.getSizeCode(); i++) {
+            for (int i = 0; i < codeSize; i++) {
                 code.add(Integer.parseInt(String.valueOf(chosenCode.charAt(i))));
             }
         }
@@ -80,6 +83,7 @@ public class User extends Player {
             logger.info("Votre combinaison n'est pas valide, veuillez en choisir une autre.");
             selectCode();
         }
+
     }
 
 
@@ -88,12 +92,12 @@ public class User extends Player {
     public void  selectProposal(){
         Scanner sc = new Scanner(System.in);
         proposal.clear();
-        logger.info("Entrez une proposition de réponse à " + config.getSizeCode() + " chiffres :");
+        logger.info("Entrez une proposition de réponse à " + codeSize + " chiffres :");
         String chosenProposal = sc.nextLine();
 
         boolean correctCombi = chosenCombiIsCorrect(chosenProposal);
         if (correctCombi){
-            for (int i = 0; i < config.getSizeCode(); i++) {
+            for (int i = 0; i < codeSize; i++) {
                 proposal.add(Integer.parseInt(String.valueOf(chosenProposal.charAt(i))));
             }
         }
@@ -144,11 +148,11 @@ public class User extends Player {
     public boolean hintIsCorrectPOM(List<Object>hint,String input) {
         boolean hintIsCorrect = true;
         List<Object> userHintPOM = new ArrayList<>();
-        if (input.length() != config.getSizeCode()) {
+        if (input.length() != codeSize) {
             hintIsCorrect = false;
         } else {
             userHintPOM.clear();
-            for (int i = 0; i < config.getSizeCode(); i++) {
+            for (int i = 0; i < codeSize; i++) {
                 userHintPOM.add(input.charAt(i));
             }
             if (!userHintPOM.equals(hint)) {

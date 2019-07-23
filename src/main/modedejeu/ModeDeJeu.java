@@ -24,8 +24,10 @@ public class ModeDeJeu {
     int nbTrial;
     int nbTrialMax = config.getNbTrialMax();
     boolean gameEnd;
-    User player1 = new User();
-    Computer player2 = new Computer();
+    public int codeSize = config.getSizeCode();
+    public int number = config.getNumber();
+    User player1 = new User(codeSize,number);
+    Computer player2 = new Computer(codeSize,number);
 
     public ModeDeJeu(Game game) {
         this.game = game;

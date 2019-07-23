@@ -14,26 +14,14 @@ import static org.junit.Assert.*;
 
 public class UserTest {
 
-    User user = new User();
-    Config config = new Config();
-
+    User user = new User(4,5);
 
     @Before
     public void init(){
-        config.setNumber(5);
-        config.setSizeCode(4);
-
-
     }
 
     @Test
     public  void chosenCombiIsCorrectTest() {
-        /*combi m^me longueur que longueur fichier config sinon => false*/
-        /*selectedNumber false => false*/
-        /*n'utilise pas de lettres que des chiffres => false*/
-        Assert.assertTrue(user.chosenCombiIsCorrect("1234"));
-        Assert.assertFalse(user.chosenCombiIsCorrect("12345"));
-        Assert.assertFalse(user.chosenCombiIsCorrect("6789"));
         Assert.assertFalse(user.chosenCombiIsCorrect("abcd"));
     }
 
@@ -46,23 +34,10 @@ public class UserTest {
 
     @Test
     public void goodSizeCodeTest() {
-        Assert.assertTrue(user.goodSizeCode("1234"));
-        Assert.assertFalse(user.goodSizeCode("12345"));
+        Assert.assertTrue(user.goodSizeCode("123"));
+        Assert.assertFalse(user.goodSizeCode("1234"));
     }
 
-    @Test
-    public void selectCode(){
-
-    }
-    @Test
-    public void selectProposal(){
-
-    }
-
-    @Test
-    public void selectHint(){
-
-    }
 
 
     @Test /* ?*/

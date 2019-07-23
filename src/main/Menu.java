@@ -21,46 +21,6 @@ public class Menu {
     private static ModeDeJeu gameplay;
 
 
-    /**
-     * règles du jeu + sélection du jeu
-     * @return choix utilisateur
-     * @throws InputMismatchException
-     */
-   /* private static Game DisplayMenuJeu(){
-        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
-                "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
-                " essais possibles.");
-
-        Scanner sc = new Scanner(System.in);
-        logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
-        logger.info("tapez 1 pour jouer à Plus ou Moins (indice = chiffre de la combinaison est plus grand (+), plus petit (-) ou c'est le bon (=))");
-        logger.info("tapez 2 pour jouer au Mastermind  (indice = nombre de chiffres bien placés et mal placés)");
-        logger.info("Saisissez votre choix : ");
-        try {
-            int selectedGame = sc.nextInt();
-            if (selectedGame ==1){
-                game = new PlusOuMoins();
-                logger.info("Vous avez choisi de jouer  au Plus ou Moins.");
-                return game;
-            }
-            else if (selectedGame==2){
-                game = new Mastermind();
-                logger.info("Vous avez choisi de jouer  au MasterMind.");
-                return game;
-            }
-            else{
-                logger.error("erreur saisie");
-                logger.info("Votre choix n'est pas valide. Veullez entrer 1 ou 2. ");
-                DisplayMenuJeu();
-            }
-        }
-        catch(InputMismatchException e) {
-            logger.error("erreur saisie");
-            logger.info("Votre choix n'est pas valide. Veullez entrer 1 ou 2. ");
-            DisplayMenuJeu();
-        }
-        return game;
-    }*/
 
     /** affichage sélection du jeu et lancement de la partie
      * @throws InputMismatchException*/

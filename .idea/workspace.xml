@@ -6,23 +6,70 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7ea86dd-fc4d-458f-881c-a586c867aaf1" name="Default Changelist" comment="update class Computer">
+    <list default="true" id="a7ea86dd-fc4d-458f-881c-a586c867aaf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jeudelogique_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeudelogique.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/log4j-api-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/log4j-core-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jeudelogique_jar/jeudelogique.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Mastermind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/PlusOuMoins.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Computer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Challengeur.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Defenseur.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Duel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/ModeDeJeu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jeudelogique/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/jeux/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/jeux/Mastermind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/jeux/PlusOuMoins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Mastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/Mastermind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/PlusOuMoins.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/jeux/PlusOuMoins.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Challengeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Challengeur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Defenseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Defenseur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Duel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/Duel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/ModeDeJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/modedejeu/ModeDeJeu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/jeux/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jeux/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeudelogique/main/joueur/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/joueur/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/joueur/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/joueur/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/joueur/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/joueur/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/joueur/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/modedejeu/Defenseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/Defenseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/modedejeu/Duel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/Duel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test/ConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test/ConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test/joueur/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test/joueur/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/modedejeu/ChallengeurTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/modedejeu/DefenseurTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/modedejeu/DuelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/modedejeu/ModeDeJeuTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,62 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="153" column="44" lean-forward="true" selection-start-line="153" selection-start-column="44" selection-end-line="153" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
+        <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/jeux/Mastermind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/jeux/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/test/joueur/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="1593">
+              <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -122,13 +118,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Config.java">
+        <entry file="file://$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="99">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -169,23 +174,25 @@
         <option value="$PROJECT_DIR$/src/test/main/joueur/UserTest.java" />
         <option value="$PROJECT_DIR$/src/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/test/MenuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/jeux/PlusOuMoins.java" />
         <option value="$PROJECT_DIR$/src/main/jeux/Mastermind.java" />
         <option value="$PROJECT_DIR$/src/test/test/jeux/MastermindTest.java" />
         <option value="$PROJECT_DIR$/src/test/test/jeux/PlusOuMoinsTest.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/jeux/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/Menu.java" />
+        <option value="$PROJECT_DIR$/src/test/test/modedejeu/ModeDeJeuTest.java" />
+        <option value="$PROJECT_DIR$/src/test/test/ConfigTest.java" />
+        <option value="$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java" />
+        <option value="$PROJECT_DIR$/src/main/joueur/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/joueur/User.java" />
+        <option value="$PROJECT_DIR$/src/main/modedejeu/Defenseur.java" />
+        <option value="$PROJECT_DIR$/src/main/modedejeu/Duel.java" />
+        <option value="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" />
+        <option value="$PROJECT_DIR$/src/test/test/joueur/UserTest.java" />
         <option value="$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java" />
         <option value="$PROJECT_DIR$/src/main/joueur/Computer.java" />
-        <option value="$PROJECT_DIR$/src/main/modedejeu/Duel.java" />
-        <option value="$PROJECT_DIR$/src/main/modedejeu/Defenseur.java" />
-        <option value="$PROJECT_DIR$/src/main/modedejeu/Challengeur.java" />
-        <option value="$PROJECT_DIR$/src/test/test/ConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java" />
-        <option value="$PROJECT_DIR$/src/main/jeux/Game.java" />
-        <option value="$PROJECT_DIR$/src/test/test/joueur/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/joueur/User.java" />
       </list>
     </option>
   </component>
@@ -342,7 +349,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ComputerTest.createCodeListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="jeudelogique" />
@@ -398,17 +405,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigTest.testConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComputerTest.createCodeListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jeudelogique" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="main.joueur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="main.ConfigTest" />
-      <option name="METHOD_NAME" value="testConfig" />
+      <option name="MAIN_CLASS_NAME" value="main.joueur.ComputerTest" />
+      <option name="METHOD_NAME" value="createCodeListTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.chosenCombiIsCorrectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeudelogique" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.main.joueur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.main.joueur.UserTest" />
+      <option name="METHOD_NAME" value="chosenCombiIsCorrectTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -425,22 +448,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test.main.joueur.UserTest" />
       <option name="METHOD_NAME" value="goodSizeCodeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.hintIsCorrectMMTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jeudelogique" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.main.joueur.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test.main.joueur.UserTest" />
-      <option name="METHOD_NAME" value="hintIsCorrectMMTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -470,19 +477,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ConfigTest.testConfig" />
+      <item itemvalue="JUnit.UserTest.chosenCombiIsCorrectTest" />
+      <item itemvalue="JUnit.UserTest.goodSizeCodeTest" />
       <item itemvalue="JUnit.UserTest.hintIsCorrectPOMTest" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.UserTest.hintIsCorrectMMTest" />
-      <item itemvalue="JUnit.UserTest.goodSizeCodeTest" />
+      <item itemvalue="JUnit.ComputerTest.createCodeListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComputerTest.createCodeListTest" />
+        <item itemvalue="JUnit.UserTest.goodSizeCodeTest" />
+        <item itemvalue="JUnit.UserTest.chosenCombiIsCorrectTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserTest.hintIsCorrectPOMTest" />
-        <item itemvalue="JUnit.UserTest.hintIsCorrectMMTest" />
-        <item itemvalue="JUnit.UserTest.goodSizeCodeTest" />
-        <item itemvalue="JUnit.ConfigTest.testConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -588,39 +595,46 @@
       <option name="project" value="LOCAL" />
       <updated>1563842702600</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update class UserTest">
+      <created>1563907877144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563907877144</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 14h 31m 09s.xml">
+    <history-entry file="UserTest_selectedNumberTest - 2019.07.23 at 18h 53m 24s.xml">
+      <configuration name="UserTest.selectedNumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_chosenCombiIsCorrectTest - 2019.07.23 at 18h 54m 04s.xml">
+      <configuration name="UserTest.chosenCombiIsCorrectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 18h 58m 59s.xml">
       <configuration name="UserTest.hintIsCorrectPOMTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 14h 32m 09s.xml">
-      <configuration name="UserTest.hintIsCorrectPOMTest" configurationId="JUnit" />
+    <history-entry file="UserTest_goodSizeCodeTest - 2019.07.23 at 19h 41m 41s.xml">
+      <configuration name="UserTest.goodSizeCodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectMMTest - 2019.07.23 at 14h 32m 32s.xml">
-      <configuration name="UserTest.hintIsCorrectMMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 43m 28s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectMMTest - 2019.07.23 at 14h 33m 48s.xml">
-      <configuration name="UserTest.hintIsCorrectMMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 43m 58s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectMMTest - 2019.07.23 at 14h 34m 15s.xml">
-      <configuration name="UserTest.hintIsCorrectMMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 44m 59s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectMMTest - 2019.07.23 at 14h 35m 14s.xml">
-      <configuration name="UserTest.hintIsCorrectMMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 45m 34s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 14h 36m 29s.xml">
-      <configuration name="UserTest.hintIsCorrectPOMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 46m 41s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 14h 38m 03s.xml">
-      <configuration name="UserTest.hintIsCorrectPOMTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_hintIsCorrectMMTest - 2019.07.23 at 14h 41m 44s.xml">
-      <configuration name="UserTest.hintIsCorrectMMTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_hintIsCorrectPOMTest - 2019.07.23 at 14h 44m 17s.xml">
-      <configuration name="UserTest.hintIsCorrectPOMTest" configurationId="JUnit" />
+    <history-entry file="ComputerTest_createCodeListTest - 2019.07.23 at 19h 48m 20s.xml">
+      <configuration name="ComputerTest.createCodeListTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +650,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43535188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -644,7 +658,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3633388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -664,7 +678,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45171848" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43535188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -672,7 +686,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3633388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -694,7 +708,8 @@
     <MESSAGE value="update classe Game et implement Test" />
     <MESSAGE value="update class User et implement Test" />
     <MESSAGE value="update class Computer" />
-    <option name="LAST_COMMIT_MESSAGE" value="update class Computer" />
+    <MESSAGE value="update class UserTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="update class UserTest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java" />
@@ -765,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/modedejeu/ModeDeJeuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test/modedejeu/DefenseurTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -779,104 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/joueur/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/jeux/PlusOuMoins.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/jeux/PlusOuMoinsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="145" column="29" selection-start-line="145" selection-start-column="29" selection-end-line="145" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/jeux/MastermindTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Defenseur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Duel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="118" column="65" selection-start-line="118" selection-start-column="65" selection-end-line="118" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/ConfigTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -901,10 +815,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/modedejeu/ModeDeJeuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/jeux/MastermindTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="11" column="15" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/ConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/jeux/PlusOuMoinsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Defenseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Duel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/modedejeu/Challengeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/joueur/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/joueur/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/modedejeu/ModeDeJeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="99">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -921,20 +945,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test/joueur/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/joueur/Computer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="1593">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/joueur/User.java">
+    <entry file="file://$PROJECT_DIR$/src/test/test/joueur/ComputerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="153" column="44" lean-forward="true" selection-start-line="153" selection-start-column="44" selection-end-line="153" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>
