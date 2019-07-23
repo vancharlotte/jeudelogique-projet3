@@ -13,13 +13,36 @@ public class ComputerTest {
 
     @Test
     public void selectProposal() {
+
     }
 
     @Test
     public void selectProposalPOM() {
+
+    }
+
+    @Test
+    public void createCodeListTest(){
+
+    }
+
+    @Test
+    public void chooseCode(){
+
     }
 
     @Test
     public void selectProposalMM() {
+
+    }
+
+    @Test
+    public void selectFromNumberTest() {
+
+    }
+
+    @Test
+    public void selectFromPresentNumberTest(){
+
     }
 }

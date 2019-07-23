@@ -140,6 +140,9 @@ public class Computer extends Player {
      * @param hint dernier indice donné à l'ordinateur
      * @param nbTrials nombres d'essais utilisés     */
     public void selectProposalMM(List<Object> hint, int nbTrials){
+        if (nbTrials==0){
+            proposalList.clear();
+            present.clear();}
         if (nbTrials!=0&&present.size()<config.getSizeCode()){
             int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
             for (int i = 0; i < nbHint; i++) {

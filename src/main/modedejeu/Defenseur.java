@@ -44,7 +44,7 @@ public class Defenseur extends ModeDeJeu {
     public void sentenceEnd(List<Integer> code, List<Integer> proposal, int nbTrial, int nbTrialMax){
         if (code.equals(proposal)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison.");
         if(nbTrial == nbTrialMax)logger.info("Bravo, vous avez gagné la partie!");
-        replay(player2.proposalList,player2.present);
+        replay();
     }
 
     /**
@@ -53,10 +53,10 @@ public class Defenseur extends ModeDeJeu {
      * @param present chiffres présents dans la combinaison à trouver à la partie précédente
      */
     @Override
-    public void replay(List proposalList, List present) {
+    public void replay() {
         gameEnd=false;
         nbTrial=0;
-        super.replay(proposalList, present);
+        super.replay();
     }
 }
 

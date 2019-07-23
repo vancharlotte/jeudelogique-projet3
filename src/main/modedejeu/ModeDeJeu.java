@@ -42,14 +42,10 @@ public class ModeDeJeu {
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non
-     * @param proposalList liste de propositions de la partie précedécente
-     * @param present chiffres présents dans la combinaison à trouver à la partie précédente
      * @throws InputMismatchException
      */
-    public void replay(List proposalList, List present) {
+    public void replay() {
         Scanner sc = new Scanner(System.in);
-        proposalList.clear();
-        present.clear();
         logger.info("Souhaitez vous refaire une partie?");
         logger.info("- 1 : oui");
         logger.info("- 2 : oui mais je veux changer de mode de jeu ");
@@ -70,14 +66,14 @@ public class ModeDeJeu {
                 default:
                     logger.error("erreur saisie");
                     logger.info("Votre choix n'est pas valide. Veullez entrer 1, 2 ou 3. ");
-                    replay(proposalList, present);
+                    replay();
                     break;
             }
         }
         catch (InputMismatchException e) {
             logger.error("erreur saisie");
             logger.info("Votre choix n'est pas valide. Veullez entrer 1, 2 ou 3. ");
-            replay(proposalList, present);
+            replay();
         }
     }
 

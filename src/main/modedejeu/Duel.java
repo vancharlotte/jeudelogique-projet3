@@ -51,20 +51,18 @@ public class Duel extends ModeDeJeu {
         if (code1.equals(proposal1)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison. La combinaison de l'ordinateur était : " + player2.code);
         if (code2.equals(proposal2)) logger.info("Bravo, vous avez gagné la partie!");
         if(nbTrial == nbTrialMax) logger.info("Egalité! La combinaison de l'ordinateur été : " + code1);
-        replay(player2.proposalList, player2.present);
+        replay();
     }
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non
-     * @param proposalList liste de propositions de la partie précedécente
-     * @param present chiffres présents dans la combinaison à trouver à la partie précédente
+
      */
     @Override
-    public void replay(List proposalList, List present) {
+    public void replay() {
         gameEnd=false;
         nbTrial=0;
-        proposalList.clear();
-        super.replay(proposalList, present);
+        super.replay();
     }
 
 }
