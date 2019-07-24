@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Computer extends Player {
 
-    private List<List> codeList = new ArrayList<>();
+    public List<List> codeList = new ArrayList<>();
     public List<Integer> present = new ArrayList<>();
     public List<Object> proposalList = new ArrayList<>();
 
@@ -125,7 +125,7 @@ public class Computer extends Player {
      * pour choisir aléatoirement une proposition par l'ordinateur/ jeu plusoumoins
      * @return une proposition possible
      */
-    private List chooseCode() {
+    public List chooseCode() {
         Random rd = new Random();
         for (int i = 0; i < codeSize; i++) {
             List<Integer> possible = codeList.get(i);
@@ -171,7 +171,7 @@ public class Computer extends Player {
      * l'ordinateur choisit une nouvelle proposition composé du même chiffre pour mastermind (lorsque tous les chiffres
      * présents n'ont pas encore été trouvés par l'ordinateur) /jeu mastermind
      */
-    private void selectFromNumber() {
+    public List selectFromNumber() {
         Random rd = new Random();
         int n = rd.nextInt(codeSize);
         proposal.clear();
@@ -180,12 +180,13 @@ public class Computer extends Player {
         }
         if (proposalList.contains(proposal)) {
             selectFromNumber();}
+        return proposal;
     }
 
     /**
      * l'ordinateur choisit une nouvelle proposition aléatoire composés des chiffres présents /jeu mastermind
      */
-    private void selectFromPresentNumber(){
+    public List selectFromPresentNumber(){
         Random rd = new Random();
         List<Integer> present2 = new ArrayList<>();
         present2.addAll(present);
@@ -198,6 +199,7 @@ public class Computer extends Player {
         if (proposalList.contains(proposal)) {
             selectFromPresentNumber();
         }
+        return proposal;
     }
 
 }

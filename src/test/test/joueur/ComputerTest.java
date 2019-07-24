@@ -16,6 +16,8 @@ public class ComputerTest {
 
     @Test
     public void selectCode() {
+
+
     }
 
     @Test
@@ -39,6 +41,12 @@ public class ComputerTest {
 
     @Test
     public void chooseCode(){
+        Computer computer = new Computer(2,0);
+        computer.createCodeList();
+        List <Object> test = new ArrayList<>(Arrays.asList(0,0));
+        Assert.assertEquals(computer.chooseCode(),test);
+        List <Object> test1 = new ArrayList<>(Arrays.asList(1,1));
+        Assert.assertNotEquals(computer.chooseCode(),test1);
 
     }
 
@@ -49,11 +57,29 @@ public class ComputerTest {
 
     @Test
     public void selectFromNumberTest() {
+        Computer computer = new Computer(1,0);
+        System.out.println(computer.selectFromNumber());
+        List <Object> proposaltest = new ArrayList<>(Arrays.asList(0));
+        Assert.assertEquals(computer.selectFromNumber(),proposaltest);
+        List <Object> proposaltest2 = new ArrayList<>(Arrays.asList(1));
+        Assert.assertNotEquals(computer.selectFromNumber(),proposaltest);
+
+
 
     }
 
     @Test
     public void selectFromPresentNumberTest(){
+        Computer computer = new Computer(2,1);
+        computer.present.add(1);
+        computer.present.add(1);
+        System.out.println(computer.present);
+        List <Object> proposaltest = new ArrayList<>(Arrays.asList(1,1));
+        Assert.assertEquals(computer.selectFromPresentNumber(),proposaltest);
+        List <Object> proposaltest2 = new ArrayList<>(Arrays.asList(0,1));
+        Assert.assertNotEquals(computer.selectFromPresentNumber(),proposaltest2);
+
+
 
     }
 }
