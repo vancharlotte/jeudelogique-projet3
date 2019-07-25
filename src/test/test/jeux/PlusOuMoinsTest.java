@@ -14,7 +14,7 @@ public class PlusOuMoinsTest {
     PlusOuMoins plusoumoins = new PlusOuMoins();
 
     @Test
-    public void generateHintTest() {
+    public void testGenerateHint() {
 
         List<Integer> code = new ArrayList<>();
         code.add(2);

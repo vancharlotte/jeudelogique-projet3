@@ -28,6 +28,7 @@ public class ModeDeJeu {
     public int number = config.getNumber();
     User player1 = new User(codeSize,number);
     Computer player2 = new Computer(codeSize,number);
+    Menu menu = new Menu();
 
     public ModeDeJeu(Game game) {
         this.game = game;
@@ -61,7 +62,7 @@ public class ModeDeJeu {
                     play();
                     break;
                 case 2:
-                    Menu.displayMenuModeJeu();
+                    menu.displayMenuModeJeu();
                     break;
                 case 3:
                     logger.info("Merci d'avoir joué!");

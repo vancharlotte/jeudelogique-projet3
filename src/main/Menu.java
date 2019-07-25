@@ -25,7 +25,7 @@ public class Menu {
     /** affichage sélection du jeu et lancement de la partie
      * @throws InputMismatchException*/
 
-       private static void displayMenuJeu(){
+       private void displayMenuJeu(){
         logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
                 "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
                 " essais possibles.");
@@ -61,7 +61,7 @@ public class Menu {
      * @param selectedGame input utilisateur, choix du jeu
      * @return instance du jeu sélectionné
      */
-    public static Game initJeu (int selectedGame){
+    public Game initJeu (int selectedGame){
         if (selectedGame ==1){
             game = new PlusOuMoins();
         }
@@ -78,7 +78,7 @@ public class Menu {
 
     /** affichage sélection du mode jeu et lancement de la partie
      * @throws InputMismatchException*/
-    public static void displayMenuModeJeu(){
+    public  void displayMenuModeJeu(){
         displayMenuJeu();
         Scanner sc = new Scanner(System.in);
         logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
@@ -118,7 +118,7 @@ public class Menu {
      * @param selectedMode input utilisateur choix du mode jeu
      * @return instance du mode de jeu sélectionné
      */
-    public static ModeDeJeu initModeJeu (int selectedMode){
+    public ModeDeJeu initModeJeu (int selectedMode){
         switch (selectedMode) {
             case 1:
                 gameplay=new Challengeur(game);

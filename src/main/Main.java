@@ -3,8 +3,6 @@ package main;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static main.Menu.displayMenuModeJeu;
-
 public class Main {
     private static final Logger logger = LogManager.getLogger();
     private static boolean  modeDev;
@@ -18,7 +16,8 @@ public class Main {
             modeDev = config.isModeDev();
         }
         if (modeDev){logger.info("mode développeur activé");}
-        displayMenuModeJeu();
+        Menu menu = new Menu();
+        menu.displayMenuModeJeu();
 
     }
 

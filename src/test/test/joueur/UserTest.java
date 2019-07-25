@@ -1,4 +1,4 @@
-package test.main.joueur;
+package main;
 
 import main.Config;
 import main.joueur.User;
@@ -21,19 +21,19 @@ public class UserTest {
     }
 
     @Test
-    public  void chosenCombiIsCorrectTest() {
+    public  void testChosenCombiIsCorrect() {
         Assert.assertFalse(user.chosenCombiIsCorrect("abcd"));
     }
 
 
     @Test
-    public void selectedNumberTest(){
+    public void testSelectedNumber(){
         Assert.assertTrue(user.selectedNumber("0145"));
         Assert.assertFalse(user.selectedNumber("6789"));
     }
 
     @Test
-    public void goodSizeCodeTest() {
+    public void testGoodSizeCode() {
         Assert.assertTrue(user.goodSizeCode("123"));
         Assert.assertFalse(user.goodSizeCode("1234"));
     }
@@ -41,7 +41,7 @@ public class UserTest {
 
 
     @Test /* ?*/
-    public void hintIsCorrectPOMTest() {
+    public void testHintIsCorrectPOM() {
         List <Object> hint = new ArrayList<>(Arrays.asList("+","+","+","+"));
         Assert.assertTrue(user.hintIsCorrectPOM(hint,"++++"));
         Assert.assertFalse(user.hintIsCorrectPOM(hint,"-+-+-"));
@@ -49,7 +49,7 @@ public class UserTest {
     }
 
     @Test
-    public void hintIsCorrectMMTest(){
+    public void testHintIsCorrectMM(){
         List <Object> hint = new ArrayList<>(Arrays.asList(1,0));
         Assert.assertTrue(user.hintIsCorrectMM(hint,1, 0));
         Assert.assertFalse(user.hintIsCorrectMM(hint, 1,2));
