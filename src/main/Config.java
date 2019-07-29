@@ -48,5 +48,10 @@ public class Config {
     public boolean isModeDev() {
         return modeDev;
     }
-    
+
+    public void setBundle(ResourceBundle bundle) {
+        this.bundle = bundle;
+    }
+
+
 }
