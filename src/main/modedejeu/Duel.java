@@ -40,12 +40,12 @@ public class Duel extends ModeDeJeu {
 
     /**
      *  affichage de phrase de fin fonction de l'issue de la partie
-     * @param code1
-     * @param proposal1
-     * @param code2
-     * @param proposal2
-     * @param nbTrial
-     * @param nbTrialMax
+     * @param code1 combinaison secrète de l'utilsateur
+     * @param proposal1 propositon par utilisateur
+     * @param code2 combinaison secrète de l'ordinateur
+     * @param proposal2 proposition par l'ordinateur
+     * @param nbTrial nombre d'essais utilisés
+     * @param nbTrialMax nombre d'essais max
      */
     public void sentenceEnd(List<Integer> code1, List<Integer> proposal1, List<Integer> code2, List<Integer> proposal2, int nbTrial, int nbTrialMax){
         if (code1.equals(proposal1)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison. La combinaison de l'ordinateur était : " + player2.code);

@@ -21,8 +21,5 @@ public class Main {
 
     }
 
-    public static boolean isModeDev() {
-        return modeDev;
-    }
 }
 

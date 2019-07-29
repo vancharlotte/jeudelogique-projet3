@@ -56,7 +56,7 @@ public class User extends Player {
      * méthode pour vérifier si la taille de la combinaison choisi par utilisateur et de la bonne taille
      * (définis dans le fichier de configuration)
      * @param combi combinaison proposé par l'utilisateur
-     * @return tailel de la combinaison correcte
+     * @return boolean goodSizeCode taille de la combinaison correcte
      */
     public boolean goodSizeCode(String combi){
         boolean goodSizeCode = true;
@@ -142,7 +142,8 @@ public class User extends Player {
 
     /**
      * valider indice donné par utilisateur plus ou moins
-     * @param hint (indice généré par ordinateur) input (indice donné par utilisateur)
+     * @param hint (indice généré par ordinateur)
+     * @param input (indice donné par utilisateur)
      * @return boolean hintIsCorrect
      */
     public boolean hintIsCorrectPOM(List<Object>hint,String input) {
@@ -163,9 +164,10 @@ public class User extends Player {
 
     /**
      * valider indice donné par utilisateur mastermind
-     *      * @param hint (indice généré par ordinateur) input (indice donné par utilisateur)
-     *      * @return boolean hintIsCorrect
-     * return boolean hintIsCorrect
+     * @param hint indice généré par ordinateur
+     * @param input1 indice donné par utilisateur : nombre de chiffres bien placés
+     * @param input2 indice donné par utilisateur : nombre de chiffres mal placés
+     * @return boolean hintIsCorrect
      * @throws InputMismatchException
      */
     public boolean hintIsCorrectMM(List<Object>hint, int input1, int input2){

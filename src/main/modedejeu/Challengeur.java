@@ -29,7 +29,7 @@ public class Challengeur extends ModeDeJeu  {
 
     /**
      *  affichage de phrase de fin fonction de l'issue de la partie
-     * @param code combinaison à trovuer
+     * @param code combinaison à trouver
      * @param proposal propsiton de l'adversaire
      * @param nbTrial nombre d'essais utilisés
      * @param nbTrialMax nombre d'essais max
