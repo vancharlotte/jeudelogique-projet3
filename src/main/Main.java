@@ -6,7 +6,11 @@ import org.apache.logging.log4j.Logger;
 public class Main {
     private static final Logger logger = LogManager.getLogger();
     private static Config config = new Config();
-    private static boolean  modeDev;
+    private static boolean modeDev;
+
+    public static boolean isModeDev() {
+        return modeDev;
+    }
 
     /** Le mode développeur peut être lancé à partir de la class Main */
     public static void main(String[] args) {
