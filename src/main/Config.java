@@ -24,7 +24,12 @@ public class Config {
             modeDev = Boolean.parseBoolean(bundle.getString("modeDev"));
         }
         catch (MissingResourceException e ){
-        logger.fatal("Le fichier de configuration introuvable.");
+            sizeCode = 4;
+            nbTrialMax = 10;
+            number = 5;
+            modeDev = false;
+            logger.debug("Le fichier de configuration introuvable. Utilisation des valeurs pas défaut");
+
         }
     }
 
@@ -32,36 +37,16 @@ public class Config {
         return sizeCode;
     }
 
-    public void setSizeCode(int sizeCode) {
-        this.sizeCode = sizeCode;
-    }
-
     public int getNbTrialMax() {
         return nbTrialMax;
-    }
-
-    public void setNbTrialMax(int nbTrialMax) {
-        this.nbTrialMax = nbTrialMax;
     }
 
     public int getNumber() {
         return  number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     public boolean isModeDev() {
         return modeDev;
     }
-
-    public void setModeDev(boolean modeDev) {
-        this.modeDev = modeDev;
-    }
-
-    public void setBundle(ResourceBundle bundle) {
-        this.bundle = bundle;
-    }
-
+    
 }

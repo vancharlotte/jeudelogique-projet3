@@ -13,6 +13,7 @@ public class ConfigTest {
     public void testConfig(){
     Config config = new Config();
     config.setBundle(ResourceBundle.getBundle("resourcesabsentes.config"));
+
     }
 
 

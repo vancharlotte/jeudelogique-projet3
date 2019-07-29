@@ -67,8 +67,6 @@ public class ComputerTest {
         proposaltest2.add(1);
         Assert.assertNotEquals(computer.selectFromNumber(),proposaltest2);
 
-
-
     }
 
     @Test

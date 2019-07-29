@@ -18,14 +18,14 @@ import java.util.Scanner;
 
 public class ModeDeJeu {
     protected static final Logger logger = LogManager.getLogger();
-    protected Config config = new Config();
+    private static Config config = new Config();
     protected Game game;
     List<Object> hint = new ArrayList<>();
     int nbTrial;
-    int nbTrialMax = config.getNbTrialMax();
     boolean gameEnd;
-    public int codeSize = config.getSizeCode();
-    public int number = config.getNumber();
+    static int nbTrialMax = config.getNbTrialMax();
+    static int codeSize = config.getSizeCode();
+    static int number = config.getNumber();
     User player1 = new User(codeSize,number);
     Computer player2 = new Computer(codeSize,number);
     Menu menu = new Menu();

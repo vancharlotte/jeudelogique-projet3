@@ -1,6 +1,5 @@
 package main;
 
-import main.Config;
 import main.joueur.User;
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
 
 public class UserTest {
 
@@ -42,7 +40,7 @@ public class UserTest {
 
     @Test /* ?*/
     public void testHintIsCorrectPOM() {
-        List <Object> hint = new ArrayList<>(Arrays.asList("+","+","+","+"));
+        List <Object> hint = new ArrayList<>(Arrays.asList('+','+','+','+'));
         Assert.assertTrue(user.hintIsCorrectPOM(hint,"++++"));
         Assert.assertFalse(user.hintIsCorrectPOM(hint,"-+-+-"));
 
