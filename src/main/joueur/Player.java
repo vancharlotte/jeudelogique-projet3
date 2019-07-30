@@ -1,7 +1,5 @@
 package main.joueur;
 
-
-import main.Config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

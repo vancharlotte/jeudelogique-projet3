@@ -47,7 +47,7 @@ public class Duel extends ModeDeJeu {
      * @param nbTrial nombre d'essais utilisés
      * @param nbTrialMax nombre d'essais max
      */
-    public void sentenceEnd(List<Integer> code1, List<Integer> proposal1, List<Integer> code2, List<Integer> proposal2, int nbTrial, int nbTrialMax){
+    private void sentenceEnd(List<Integer> code1, List<Integer> proposal1, List<Integer> code2, List<Integer> proposal2, int nbTrial, int nbTrialMax){
         if (code1.equals(proposal1)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison. La combinaison de l'ordinateur était : " + player2.code);
         if (code2.equals(proposal2)) logger.info("Bravo, vous avez gagné la partie!");
         if(nbTrial == nbTrialMax) logger.info("Egalité! La combinaison de l'ordinateur été : " + code1);

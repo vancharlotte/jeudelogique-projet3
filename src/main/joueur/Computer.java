@@ -11,9 +11,9 @@ import java.util.Random;
 
 public class Computer extends Player {
 
-    public List<List> codeList = new ArrayList<>();
+    private List<List> codeList = new ArrayList<>();
     public List<Integer> present = new ArrayList<>();
-    public List<Object> proposalList = new ArrayList<>();
+    private List<Object> proposalList = new ArrayList<>();
 
     public Computer(int codeSize, int number) {
         super(codeSize, number);
@@ -68,9 +68,7 @@ public class Computer extends Player {
 
         } else {
                 for (int i = 0; i < codeSize; i++) {
-                    List<Integer> possible = new ArrayList<>();
-                    possible.clear();
-                    possible = codeList.get(i);
+                    List<Integer> possible = codeList.get(i);
                     switch ((Character) hint.get(i)) {
                         case '=':
                             for (Iterator<Integer> it = possible.iterator(); it.hasNext(); ) {
