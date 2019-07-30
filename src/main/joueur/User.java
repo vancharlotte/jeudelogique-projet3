@@ -23,14 +23,12 @@ public class User extends Player {
      * @throws NumberFormatException input=String
      */
     public boolean chosenCombiIsCorrect(String combi){
-        boolean chosenCombiIsCorrect;
+        boolean chosenCombiIsCorrect =true;
         try{
             if (!goodSizeCode(combi)) {
                 chosenCombiIsCorrect = false;}
             else if (!selectedNumber(combi)){
                 chosenCombiIsCorrect = false;}
-            else {
-                chosenCombiIsCorrect = true;}
         }
         catch (NumberFormatException e){
             chosenCombiIsCorrect = false;
@@ -153,7 +151,6 @@ public class User extends Player {
         if (input.length() != codeSize) {
             hintIsCorrect = false;
         } else {
-            userHintPOM.clear();
             for (int i = 0; i < codeSize; i++) {
                 userHintPOM.add(input.charAt(i));
             }
@@ -174,7 +171,6 @@ public class User extends Player {
     public boolean hintIsCorrectMM(List<Object>hint, int input1, int input2){
         boolean hintIsCorrect = true;
         List<Object> userHintMM = new ArrayList<>();
-        userHintMM.clear();
         userHintMM.add(input1);
         userHintMM.add(input2);
         try{
