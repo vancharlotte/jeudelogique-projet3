@@ -39,7 +39,7 @@ public class Duel extends ModeDeJeu {
     }
 
     /**
-     *  affichage de phrase de fin fonction de l'issue de la partie
+     * affichage de phrase de fin fonction de l'issue de la partie
      * @param code1 combinaison secrète de l'utilsateur
      * @param proposal1 propositon par utilisateur
      * @param code2 combinaison secrète de l'ordinateur
@@ -56,7 +56,6 @@ public class Duel extends ModeDeJeu {
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non
-
      */
     @Override
     public void replay() {

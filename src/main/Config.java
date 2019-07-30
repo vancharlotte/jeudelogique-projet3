@@ -28,7 +28,7 @@ public class Config {
             nbTrialMax = 10;
             number = 5;
             modeDev = false;
-            logger.debug("Le fichier de configuration introuvable. Utilisation des valeurs pas défaut");
+            logger.debug("Le fichier de configuration est introuvable. Utilisation des valeurs pas défaut");
 
         }
     }
