@@ -46,7 +46,7 @@ public class ModeDeJeu {
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non
-     * @throws InputMismatchException
+     * @throws InputMismatchException input = String
      */
     public void replay() {
         Scanner sc = new Scanner(System.in);

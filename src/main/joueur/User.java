@@ -18,8 +18,9 @@ public class User extends Player {
 
     /**
      * valider le format de la saisie utilisateur (combinaison/proposition)
+     * @param combi combinaison proposé par l'utilsateur
      * @return boolean chosenCombiIsCorrect
-     * @throws NumberFormatException
+     * @throws NumberFormatException input=String
      */
     public boolean chosenCombiIsCorrect(String combi){
         boolean chosenCombiIsCorrect;
@@ -168,7 +169,7 @@ public class User extends Player {
      * @param input1 indice donné par utilisateur : nombre de chiffres bien placés
      * @param input2 indice donné par utilisateur : nombre de chiffres mal placés
      * @return boolean hintIsCorrect
-     * @throws InputMismatchException
+     * @throws InputMismatchException input= String
      */
     public boolean hintIsCorrectMM(List<Object>hint, int input1, int input2){
         boolean hintIsCorrect = true;

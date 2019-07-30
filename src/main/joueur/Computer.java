@@ -170,10 +170,11 @@ public class Computer extends Player {
     /**
      * l'ordinateur choisit une nouvelle proposition composé du même chiffre pour mastermind (lorsque tous les chiffres
      * présents n'ont pas encore été trouvés par l'ordinateur) /jeu mastermind
+     * @return proposition choisi par l'ordinateur
      */
     public List selectFromNumber() {
         Random rd = new Random();
-        int n = rd.nextInt(codeSize);
+        int n = rd.nextInt(number+1);
         proposal.clear();
         for (int i = 0; i < codeSize; i++) {
             proposal.add(n);
@@ -185,6 +186,7 @@ public class Computer extends Player {
 
     /**
      * l'ordinateur choisit une nouvelle proposition aléatoire composés des chiffres présents /jeu mastermind
+     * @return proposition choisi par l'ordinateur
      */
     public List selectFromPresentNumber(){
         Random rd = new Random();

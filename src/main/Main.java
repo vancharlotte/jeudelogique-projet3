@@ -12,7 +12,8 @@ public class Main {
         return modeDev;
     }
 
-    /** Le mode développeur peut être lancé à partir de la class Main */
+    /** Le mode développeur peut être lancé à partir de la class Main
+     * @param args  développeur activé ou non*/
     public static void main(String[] args) {
         if (args.length > 0 && args[0].contains("dev")) {
             modeDev = true;

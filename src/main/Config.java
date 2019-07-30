@@ -15,7 +15,7 @@ public class Config {
     private static final Logger logger = LogManager.getLogger();
 
     /** configuration du jeu
-     * @throws MissingResourceException*/
+     * @throws MissingResourceException fichier de configintrouvable*/
     public Config() {
         try {
             sizeCode = Integer.parseInt(bundle.getString("sizeCode"));

@@ -23,7 +23,7 @@ public class Menu {
 
 
     /** affichage sélection du jeu et lancement de la partie
-     * @throws InputMismatchException*/
+     * @throws InputMismatchException input=String*/
 
        private void displayMenuJeu(){
         logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
@@ -77,7 +77,7 @@ public class Menu {
     }
 
     /** affichage sélection du mode jeu et lancement de la partie
-     * @throws InputMismatchException*/
+     * @throws InputMismatchException input = String*/
     public  void displayMenuModeJeu(){
         displayMenuJeu();
         Scanner sc = new Scanner(System.in);
