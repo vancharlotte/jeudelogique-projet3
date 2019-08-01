@@ -35,9 +35,9 @@ public class Challengeur extends ModeDeJeu  {
      * @param nbTrialMax nombre d'essais max
      */
     private void sentenceEnd(List<Integer> code, List<Integer> proposal, int nbTrial, int nbTrialMax){
-        if (code.equals(proposal))logger.info("Bravo, vous avez gagné trouvé la combinaison.");
-        if(nbTrial == nbTrialMax) logger.info("Perdu! La combinaison de l'ordinateur été : " + code);
-        logger.info("La combinaison a trouvé été : " + code);
+        if (code.equals(proposal))logger.info("Bravo, vous avez trouv\u00e9 la combinaison.");
+        if(nbTrial == nbTrialMax) logger.info("Perdu! La combinaison de l'ordinateur \u00e9t\u00e9 : " + code);
+        logger.info("La combinaison a trouv\u00e9 \u00e9t\u00e9 : " + code);
         replay();
     }
 

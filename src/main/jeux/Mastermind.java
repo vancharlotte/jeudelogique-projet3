@@ -35,6 +35,6 @@ public class Mastermind extends Game {
         }
         hint.add(rightPosition);
         hint.add(wrongPosition);
-        return hint.get(0) + " chiffre(s) bien placé(s), "+ hint.get(1) + " chiffre(s) mal placé(s).";
+        return hint.get(0) + " chiffre(s) bien plac\u00e9(s), "+ hint.get(1) + " chiffre(s) mal plac\u00e9(s).";
     }
 }

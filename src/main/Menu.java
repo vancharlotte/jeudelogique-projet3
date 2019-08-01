@@ -26,14 +26,14 @@ public class Menu {
      * @throws InputMismatchException input=String*/
 
        private void displayMenuJeu(){
-        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres." +
+        logger.info("Chaque combinaison doit être compos\u00e9e de " + config.getSizeCode()+ " chiffres. " +
                 "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
                 " essais possibles.");
 
         Scanner sc = new Scanner(System.in);
         logger.info("Avec quel mode de jeu souhaitez-vous jouer?");
         logger.info("tapez 1 pour jouer à Plus ou Moins (indice = chiffre de la combinaison est plus grand (+), plus petit (-) ou c'est le bon (=))");
-        logger.info("tapez 2 pour jouer au Mastermind  (indice = nombre de chiffres bien placés et mal placés)");
+        logger.info("tapez 2 pour jouer au Mastermind  (indice = nombre de chiffres bien plac\u00e9s et mal plac\u00e9s)");
         logger.info("Saisissez votre choix : ");
         try{
             int selectedGame = sc.nextInt();

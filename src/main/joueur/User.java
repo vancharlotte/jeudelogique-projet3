@@ -126,9 +126,9 @@ public class User extends Player {
                 selectHint(hint, game);
             }
         } else if (game instanceof Mastermind) {
-            logger.info("Combien de chiffres sont bien placés?");
+            logger.info("Combien de chiffres sont bien plac\u00e9s?");
             int input1 = sc.nextInt();
-            logger.info("Combien de chiffres sont mal placés?");
+            logger.info("Combien de chiffres sont mal plac\u00e9s?");
             int input2 = sc.nextInt();
             boolean hintIsCorrect = hintIsCorrectMM(hint, input1, input2);
             if (!hintIsCorrect) {

@@ -28,7 +28,7 @@ public class ModeDeJeu {
     private static int number = config.getNumber();
     User player1 = new User(codeSize,number);
     Computer player2 = new Computer(codeSize,number);
-    private Menu menu = new Menu();
+    Menu menu = new Menu();
 
     public ModeDeJeu(Game game) {
         this.game = game;

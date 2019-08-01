@@ -32,7 +32,7 @@ public class Duel extends ModeDeJeu {
                     String hintForIA  = game.generateHint(player1.code,player2.proposal);
                     player1.selectHint(hint,game);
                     logger.info("indice : "+hintForIA);
-                    logger.info("Vous avez proposé la combinaison :" + player1.proposal + ". => indice :" + hintForUser);
+                    logger.info("Vous avez propos\u00e9 la combinaison :" + player1.proposal + ". => indice :" + hintForUser);
                 }
             }
         }
@@ -48,9 +48,9 @@ public class Duel extends ModeDeJeu {
      * @param nbTrialMax nombre d'essais max
      */
     private void sentenceEnd(List<Integer> code1, List<Integer> proposal1, List<Integer> code2, List<Integer> proposal2, int nbTrial, int nbTrialMax){
-        if (code1.equals(proposal1)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison. La combinaison de l'ordinateur était : " + player2.code);
+        if (code1.equals(proposal1)) logger.info("Perdu! L'ordinateur a trouv\u00e9 votre combinaison. La combinaison de l'ordinateur \u00e9tait : " + player2.code);
         if (code2.equals(proposal2)) logger.info("Bravo, vous avez gagné la partie!");
-        if(nbTrial == nbTrialMax) logger.info("Egalité! La combinaison de l'ordinateur été : " + code1);
+        if(nbTrial == nbTrialMax) logger.info("Egalit\u00e9! La combinaison de l'ordinateur \u00e9t\u00e9 : " + code1);
         replay();
     }
 
