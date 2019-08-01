@@ -42,8 +42,8 @@ public class Defenseur extends ModeDeJeu {
      * @param nbTrialMax nombre d'essai max
      */
     private void sentenceEnd(List<Integer> code, List<Integer> proposal, int nbTrial, int nbTrialMax){
-        if (code.equals(proposal)) logger.info("Perdu! L'ordinateur a trouv\u00e9 votre combinaison.");
-        if(nbTrial == nbTrialMax)logger.info("Bravo, vous avez gagn\u00e9 la partie!");
+        if (code.equals(proposal)) logger.info("Perdu! L'ordinateur a trouvé votre combinaison.");
+        if(nbTrial == nbTrialMax)logger.info("Bravo, vous avez gagné la partie!");
         replay();
     }
 

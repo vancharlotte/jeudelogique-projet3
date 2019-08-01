@@ -20,7 +20,7 @@ public class Main {
         } else {
             modeDev = config.isModeDev();
         }
-        if (modeDev){logger.info("mode d\u00e9veloppeur activ\u00e9");}
+        if (modeDev){logger.info("mode développeur activé");}
         Menu menu = new Menu();
         menu.displayMenuModeJeu();
 
