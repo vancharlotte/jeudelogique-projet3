@@ -14,7 +14,6 @@ public class Mastermind extends Game {
      */
     public String generateHint(List<Integer> code, List<Integer> proposal){
         List<Object> copyCode = new ArrayList<>();
-        copyCode.clear();
         hint.clear();
         copyCode.addAll(code);
         int rightPosition = 0;
