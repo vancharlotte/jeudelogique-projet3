@@ -1,5 +1,6 @@
-package main.jeux;
+package test.jeux;
 
+import main.jeux.Mastermind;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hamcrest">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/jeudelogique/org/hamcrest" />
+      <root url="file://$PROJECT_DIR$/jeudelogique/org/junit" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

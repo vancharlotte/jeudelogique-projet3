@@ -45,7 +45,7 @@ public class Config {
             nbTrialMax = 10;
             number = 5;
             modeDev = false;
-            logger.debug("Problème avec le fichier de  configuration. Utilisation des valeurs pas défaut");
+            logger.debug("Problème avec le fichier de configuration. Utilisation des valeurs pas défaut");
 
         }
     }

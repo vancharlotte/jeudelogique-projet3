@@ -1,5 +1,6 @@
-package main;
+package test;
 
+import main.Config;
 import org.junit.Test;
 
 import java.util.MissingResourceException;

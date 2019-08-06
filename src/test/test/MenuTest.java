@@ -1,5 +1,6 @@
-package main;
+package test;
 
+import main.Menu;
 import main.jeux.Game;
 import main.jeux.Mastermind;
 import main.jeux.PlusOuMoins;

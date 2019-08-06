@@ -1,4 +1,4 @@
-package main;
+package test.joueur;
 
 import main.joueur.User;
 import org.junit.Assert;
