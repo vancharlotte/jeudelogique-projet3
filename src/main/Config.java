@@ -29,10 +29,8 @@ public class Config {
                 File file = new File("./config.properties");
                 FileInputStream fis = new FileInputStream(file);
                 props.load(fis);
-                logger.info("find");
             }
             else{
-                logger.info("not found");
                 File file = new File("src/resources/config.properties");
                 FileInputStream fis = new FileInputStream(file);
                 props.load(fis);
