@@ -2,12 +2,13 @@ package main.modedejeu;
 import main.jeux.Game;
 import main.jeux.Mastermind;
 import main.jeux.PlusOuMoins;
+
 import java.util.List;
 
 public class Defenseur extends ModeDeJeu {
 
-    public Defenseur(Game game) {
-        super(game);
+    public Defenseur(Game game, int sizeCode, int number, int nbTrialmax) {
+        super(game, sizeCode ,number,nbTrialmax);
     }
 
     /** méthode qui définit le déroulement d'une partie en mode défenseur */

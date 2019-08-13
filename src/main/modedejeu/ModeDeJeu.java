@@ -1,7 +1,5 @@
 package main.modedejeu;
 
-
-import main.Config;
 import main.Menu;
 import main.jeux.Game;
 import main.jeux.Mastermind;
@@ -16,21 +14,25 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class ModeDeJeu {
+public abstract class ModeDeJeu {
     protected static final Logger logger = LogManager.getLogger();
-    private static Config config = new Config();
     protected Game game;
     List<Object> hint = new ArrayList<>();
     int nbTrial;
     boolean gameEnd;
-    static int nbTrialMax = config.getNbTrialMax();
-    private static int codeSize = config.getSizeCode();
-    private static int number = config.getNumber();
-    User player1 = new User(codeSize,number);
-    Computer player2 = new Computer(codeSize,number);
-    private Menu menu = new Menu();
+    protected int nbTrialMax;
+    private int sizeCode;
+    private int number;
+    User player1;
+    Computer player2;
+    private Menu menu = new Menu(sizeCode, number, nbTrialMax);
 
-    public ModeDeJeu(Game game) {
+    public ModeDeJeu(Game game, int sizeCode, int number, int nbTrialMax) {
+        this.sizeCode= sizeCode;
+        this.number = number;
+        this.nbTrialMax = nbTrialMax;
+        this.player1 = new User(sizeCode,number);
+        this.player2 = new Computer(sizeCode,number);
         this.game = game;
         if (game instanceof PlusOuMoins){
             hint =((PlusOuMoins) game).hint;
@@ -41,8 +43,7 @@ public class ModeDeJeu {
     }
 
     /** méthode qui définit le déroulement d'une partie en fonction du mode de jeu */
-    public void play(){
-    }
+    public abstract void play();
 
     /**
      * méthode qui permet de relancer une nouvelle partie ou non

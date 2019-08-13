@@ -1,4 +1,4 @@
-package test;
+package test.test;
 
 import main.Menu;
 import main.jeux.Game;
@@ -12,7 +12,7 @@ import org.junit.Test;
 
 public class MenuTest {
 
-    Menu menu = new Menu();
+    Menu menu = new Menu(4,5,10);
 
     @Test
     public void testInitJeu() {
@@ -25,12 +25,12 @@ public class MenuTest {
     }
     @Test
     public void testInitModeJeu() {
-        Game game = new Game();
-        Challengeur gameplay1 = new Challengeur(game);
+        Game game = new PlusOuMoins();
+        Challengeur gameplay1 = new Challengeur(game,4,5,10);
         Assert.assertSame(menu.initModeJeu(1).getClass(), gameplay1.getClass());
-        Defenseur gameplay2 = new Defenseur(game);
+        Defenseur gameplay2 = new Defenseur(game,4,5,10);
         Assert.assertSame(menu.initModeJeu(2).getClass(), gameplay2.getClass());
-        Duel gameplay3 = new Duel(game);
+        Duel gameplay3 = new Duel(game, 4,5,10);
         Assert.assertSame(menu.initModeJeu(3).getClass(), gameplay3.getClass());
         Assert.assertNotSame(menu.initModeJeu(4).getClass(), gameplay3.getClass());
 

@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class User extends Player {
 
-    public User(int codeSize, int number) {
-        super(codeSize, number);
+    public User(int sizeCode, int number) {
+        super(sizeCode, number);
     }
 
 
@@ -44,7 +44,7 @@ public class User extends Player {
      */
     public boolean selectedNumber(String combi){
         boolean selectedNumber = true;
-        for (int i =0; i <codeSize; i++){
+        for (int i =0; i < sizeCode; i++){
             if(Integer.parseInt(String.valueOf(combi.charAt(i)))> number){
                 selectedNumber = false; }
         }
@@ -59,7 +59,7 @@ public class User extends Player {
      */
     public boolean goodSizeCode(String combi){
         boolean goodSizeCode = true;
-        if (combi.length() != codeSize) {
+        if (combi.length() != sizeCode) {
             goodSizeCode = false;}
         return  goodSizeCode;
     }
@@ -68,12 +68,12 @@ public class User extends Player {
     public void selectCode(){
         Scanner sc = new Scanner(System.in);
         code.clear();
-        logger.info("Choisissez votre combinaison secrète à " + codeSize + " chiffres :");
+        logger.info("Choisissez votre combinaison secrète à " + sizeCode + " chiffres :");
         logger.info("Elle doit être composée de chiffres compris entre 0 et " + number);
         String chosenCode = sc.nextLine();
         boolean correctCombi = chosenCombiIsCorrect(chosenCode);
         if (correctCombi){
-            for (int i = 0; i < codeSize; i++) {
+            for (int i = 0; i < sizeCode; i++) {
                 code.add(Integer.parseInt(String.valueOf(chosenCode.charAt(i))));
             }
         }
@@ -91,12 +91,12 @@ public class User extends Player {
     public void  selectProposal(){
         Scanner sc = new Scanner(System.in);
         proposal.clear();
-        logger.info("Entrez une proposition de réponse à " + codeSize + " chiffres :");
+        logger.info("Entrez une proposition de réponse à " + sizeCode + " chiffres :");
         String chosenProposal = sc.nextLine();
 
         boolean correctCombi = chosenCombiIsCorrect(chosenProposal);
         if (correctCombi){
-            for (int i = 0; i < codeSize; i++) {
+            for (int i = 0; i < sizeCode; i++) {
                 proposal.add(Integer.parseInt(String.valueOf(chosenProposal.charAt(i))));
             }
         }
@@ -148,10 +148,10 @@ public class User extends Player {
     public boolean hintIsCorrectPOM(List<Object>hint,String input) {
         boolean hintIsCorrect = true;
         List<Object> userHintPOM = new ArrayList<>();
-        if (input.length() != codeSize) {
+        if (input.length() != sizeCode) {
             hintIsCorrect = false;
         } else {
-            for (int i = 0; i < codeSize; i++) {
+            for (int i = 0; i < sizeCode; i++) {
                 userHintPOM.add(input.charAt(i));
             }
             if (!userHintPOM.equals(hint)) {

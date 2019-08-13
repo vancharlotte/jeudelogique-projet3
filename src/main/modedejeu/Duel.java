@@ -1,14 +1,14 @@
 package main.modedejeu;
 
 import main.jeux.Game;
+
 import java.util.List;
 
 public class Duel extends ModeDeJeu {
 
-    public Duel(Game game) {
-        super(game);
+    public Duel(Game game, int sizeCode, int number, int nbTrialmax) {
+        super(game, sizeCode ,number,nbTrialmax);
     }
-
     /** méthode qui définit le déroulement d'une partie en mode duel */
     @Override
    public void play() {
@@ -32,7 +32,7 @@ public class Duel extends ModeDeJeu {
                     String hintForIA  = game.generateHint(player1.code,player2.proposal);
                     player1.selectHint(hint,game);
                     logger.info("indice : "+hintForIA);
-                    logger.info("Vous avez propos\u00e9 la combinaison :" + player1.proposal + ". => indice :" + hintForUser);
+                    logger.info("Vous avez proposé la combinaison :" + player1.proposal + ". => indice :" + hintForUser);
                 }
             }
         }

@@ -15,9 +15,8 @@ public class Computer extends Player {
     public List<Integer> present = new ArrayList<>();
     private List<Object> proposalList = new ArrayList<>();
 
-    public Computer(int codeSize, int number) {
-        super(codeSize, number);
-
+    public Computer(int sizeCode, int number) {
+        super(sizeCode, number);
     }
 
     /**
@@ -27,12 +26,11 @@ public class Computer extends Player {
     public void selectCode() {
         code.clear();
         Random rd = new Random();
-        for (int i = 0; i < codeSize; i++) {
+        for (int i = 0; i < sizeCode; i++) {
             code.add(rd.nextInt(number ));
         }
         if (Main.isModeDev()) {
             logger.info("Mode dev : La combinaison secrète de l'ordinateur est : " + code);
-            logger.info("combinaison à " + codeSize + " chiffres comprise entre 0 et "+number);
         }
     }
 
@@ -67,7 +65,7 @@ public class Computer extends Player {
             chooseCode();
 
         } else {
-                for (int i = 0; i < codeSize; i++) {
+                for (int i = 0; i < sizeCode; i++) {
                     List<Integer> possible = codeList.get(i);
                     switch ((Character) hint.get(i)) {
                         case '=':
@@ -109,7 +107,7 @@ public class Computer extends Player {
      * @return liste des chiffres possibles
      */
     public List createCodeList() {
-        for (int i = 0; i < codeSize; i++) {
+        for (int i = 0; i < sizeCode; i++) {
             List<Integer> possibleNb = new ArrayList<>();
             for (int j = 0; j < (number+1); j++) {
                 possibleNb.add(j);
@@ -125,7 +123,7 @@ public class Computer extends Player {
      */
     public List chooseCode() {
         Random rd = new Random();
-        for (int i = 0; i < codeSize; i++) {
+        for (int i = 0; i < sizeCode; i++) {
             List<Integer> possible = codeList.get(i);
             proposal.add(possible.get(rd.nextInt(possible.size())));
         }
@@ -145,16 +143,16 @@ public class Computer extends Player {
             proposalList.clear();
             present.clear();}
 
-        if (nbTrials!=0&&present.size()<codeSize){
+        if (nbTrials!=0&&present.size()< sizeCode){
             int nbHint =((Integer) hint.get(0) + (Integer) hint.get(1));
             for (int i = 0; i < nbHint; i++) {
                 present.add(proposal.get(0));
             }
         }
-        if(present.size()<codeSize){
+        if(present.size()< sizeCode){
             selectFromNumber();
         }
-        else if (present.size()== codeSize){
+        else if (present.size()== sizeCode){
             selectFromPresentNumber();
         }
         List<Object> newProposal = new ArrayList<>();
@@ -174,7 +172,7 @@ public class Computer extends Player {
         Random rd = new Random();
         int n = rd.nextInt(number+1);
         proposal.clear();
-        for (int i = 0; i < codeSize; i++) {
+        for (int i = 0; i < sizeCode; i++) {
             proposal.add(n);
         }
         if (proposalList.contains(proposal)) {
@@ -191,7 +189,7 @@ public class Computer extends Player {
         List<Integer> present2 = new ArrayList<>();
         present2.addAll(present);
         proposal.clear();
-        for (int i =0; i< codeSize;i++){
+        for (int i =0; i< sizeCode;i++){
             int random = rd.nextInt(present2.size());
             proposal.add(present2.get(random));
             present2.remove(random);

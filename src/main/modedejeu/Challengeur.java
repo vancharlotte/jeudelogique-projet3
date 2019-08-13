@@ -1,13 +1,14 @@
 package main.modedejeu;
 
 import main.jeux.Game;
+
 import java.util.List;
 
 public class Challengeur extends ModeDeJeu  {
 
 
-    public Challengeur(Game game) {
-        super(game);
+    public Challengeur(Game game, int sizeCode, int number, int nbTrialmax) {
+        super(game, sizeCode ,number,nbTrialmax);
     }
 
      /** méthode qui définit le déroulement d'une partie en mode challengeur */

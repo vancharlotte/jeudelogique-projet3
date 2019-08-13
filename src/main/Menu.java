@@ -16,18 +16,25 @@ import java.util.Scanner;
 public class Menu {
 
     private static final Logger logger = LogManager.getLogger();
-    private static Config config = new Config();
     private static Game game;
     private static ModeDeJeu gameplay;
+    private int sizeCode;
+    private int number;
+    private int nbTrialMax;
 
 
+    public Menu(int sizeCode, int number, int nbTrialMax) {
+        this.sizeCode = sizeCode;
+        this.number = number;
+        this.nbTrialMax = nbTrialMax;
+    }
 
     /** affichage sélection du jeu et lancement de la partie
      * @throws InputMismatchException input=String*/
 
        private void displayMenuJeu(){
-        logger.info("Chaque combinaison doit être composée de " + config.getSizeCode()+ " chiffres. " +
-                "Les chiffres doivent être compris entre 0 et " + config.getNumber()+". Vous avez "+ config.getNbTrialMax()+
+        logger.info("Chaque combinaison doit être composée de " + sizeCode + " chiffres. " +
+                "Les chiffres doivent être compris entre 0 et " + number +". Vous avez "+ nbTrialMax +
                 " essais possibles.");
 
         Scanner sc = new Scanner(System.in);
@@ -67,10 +74,6 @@ public class Menu {
         }
         else if (selectedGame==2){
             game = new Mastermind();
-        }
-        else{
-            game = new Game();
-
         }
        return game;
 
@@ -121,16 +124,15 @@ public class Menu {
     public ModeDeJeu initModeJeu (int selectedMode){
         switch (selectedMode) {
             case 1:
-                gameplay=new Challengeur(game);
+                gameplay=new Challengeur(game, sizeCode, number, nbTrialMax);
                 break;
             case 2:
-                gameplay =new Defenseur(game);
+                gameplay =new Defenseur(game, sizeCode, number, nbTrialMax);
                 break;
             case 3:
-                gameplay = new Duel(game);
+                gameplay = new Duel(game, sizeCode, number, nbTrialMax);
                 break;
             default :
-                gameplay = new ModeDeJeu(game);
                 break;
         }
         return gameplay;
