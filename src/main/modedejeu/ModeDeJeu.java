@@ -25,7 +25,6 @@ public abstract class ModeDeJeu {
     private int number;
     User player1;
     Computer player2;
-    private Menu menu = new Menu(sizeCode, number, nbTrialMax);
 
     public ModeDeJeu(Game game, int sizeCode, int number, int nbTrialMax) {
         this.sizeCode= sizeCode;
@@ -51,6 +50,7 @@ public abstract class ModeDeJeu {
      */
     public void replay() {
         Scanner sc = new Scanner(System.in);
+        Menu menu = new Menu(sizeCode, number, nbTrialMax);
         logger.info("Souhaitez vous refaire une partie?");
         logger.info("- 1 : oui");
         logger.info("- 2 : oui mais je veux changer de mode de jeu ");

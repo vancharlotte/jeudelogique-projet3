@@ -16,8 +16,8 @@ import java.util.Scanner;
 public class Menu {
 
     private static final Logger logger = LogManager.getLogger();
-    private static Game game;
-    private static ModeDeJeu gameplay;
+    private Game game;
+    private ModeDeJeu gameplay;
     private int sizeCode;
     private int number;
     private int nbTrialMax;
