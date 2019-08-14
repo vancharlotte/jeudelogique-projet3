@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.MissingResourceException;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 public class Config {
     private int sizeCode;
@@ -29,28 +30,29 @@ public class Config {
                 File file = new File("./config.properties");
                 FileInputStream fis = new FileInputStream(file);
                 props.load(fis);
+                sizeCode = Integer.parseInt(props.getProperty("sizeCode"));
+                nbTrialMax = Integer.parseInt(props.getProperty("nbTrialMax"));
+                number = Integer.parseInt(props.getProperty("number"));
+                modeDev = Boolean.parseBoolean(props.getProperty("modeDev"));
             }
             else{
-                File file = new File("src/resources/config.properties");
-                FileInputStream fis = new FileInputStream(file);
-                props.load(fis);
-            }
-            sizeCode = Integer.parseInt(props.getProperty("sizeCode"));
-            nbTrialMax = Integer.parseInt(props.getProperty("nbTrialMax"));
-            number = Integer.parseInt(props.getProperty("number"));
-            modeDev = Boolean.parseBoolean(props.getProperty("modeDev"));
+                ResourceBundle bundle = ResourceBundle.getBundle("resources.config");
+                sizeCode = Integer.parseInt(bundle.getString("sizeCode"));
+                nbTrialMax = Integer.parseInt(bundle.getString("nbTrialMax"));
+                number = Integer.parseInt(bundle.getString("number"));
+                modeDev = Boolean.parseBoolean(bundle.getString("modeDev"));
 
+            }
             if(sizeCode<2||sizeCode>9){sizeCode=4;}
             if(nbTrialMax<2||nbTrialMax>20){nbTrialMax=10;}
             if(number<2||number>9){number=5;}
         }
-        catch (NumberFormatException |  FileNotFoundException e ){
+        catch (NumberFormatException |  FileNotFoundException | MissingResourceException e ){
             sizeCode = 6;
             nbTrialMax = 10;
             number = 6;
             modeDev = false;
-            logger.info("missing resource exception");
-            logger.debug("Problème avec le fichier de configuration. Utilisation des valeurs pas défaut");
+            logger.error("Problème avec le fichier de configuration. Utilisation des valeurs pas défaut");
 
         } catch (IOException e) {
             e.printStackTrace();
