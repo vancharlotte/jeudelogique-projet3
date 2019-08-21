@@ -3,6 +3,7 @@
 Dans cette version, vous avez le choix entre deux jeux :
 - le jeu du plus ou moins
 - le Mastermind
+
 Vous pouvez aussi choisir entre plusieurs mode de jeu :
 - Challengeur
 - Defenseur
